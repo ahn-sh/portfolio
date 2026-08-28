@@ -87,7 +87,7 @@ body.is-page-leaving main {
         (var(--content-padding-desktop) * 2)
     );
 
-    margin: 0 auto;
+    
     padding-inline: var(--content-padding-desktop);
 }
 

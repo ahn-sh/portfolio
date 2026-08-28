@@ -28,6 +28,9 @@
 .intro__title {
     margin: 0;
 
+    max-width: 800px;
+    word-break: keep-all;
+
     font-family: var(--font-ko);
     font-size: clamp(32px, 2.8vw, 48px);
     font-weight: var(--font-weight-semibold);
@@ -36,6 +39,7 @@
 
     color: var(--color-text-primary);
 }
+
 
 
 /* ========================================

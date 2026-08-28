@@ -258,6 +258,9 @@
 .project-section__headline {
     margin: 0;
 
+    max-width: 800px;
+    word-break: keep-all;
+    
     font-size: clamp(40px, 4vw, 64px);
     font-weight: var(--font-weight-bold);
     line-height: 1.3;
@@ -1146,6 +1149,7 @@
     .project-overview__layout {
         display: block;
     }
+    
 
     /* Project Overview → 큰 제목 */
     .project-overview__side {
