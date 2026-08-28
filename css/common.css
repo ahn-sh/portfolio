@@ -82,6 +82,7 @@ body.is-page-leaving main {
 
 .container {
     width: 100%;
+    margin: 0 auto;
     max-width: calc(
         var(--content-width) +
         (var(--content-padding-desktop) * 2)

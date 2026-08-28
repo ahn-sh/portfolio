@@ -260,7 +260,7 @@
 
     max-width: 800px;
     word-break: keep-all;
-    
+
     font-size: clamp(40px, 4vw, 64px);
     font-weight: var(--font-weight-bold);
     line-height: 1.3;
@@ -325,7 +325,7 @@
 }
 
 .project-experience-card--right {
-    margin-top: clamp(-80px, -5vw, -40px);
+    margin-top: clamp(160px, -5vw, -40px);
 }
 
 .project-experience-card__visual {
@@ -1327,7 +1327,7 @@
 
 
     .project-design-system__font-name {
-        font-size: clamp(48px, 16vw, 72px);
+        font-size: clamp(48px, 12vw, 72px);
     }
 
 
