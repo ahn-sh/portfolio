@@ -1,0 +1,188 @@
+/* ========================================
+   Design Tokens
+======================================== */
+
+:root {
+
+    /* ========================================
+       Neutral
+    ======================================== */
+
+    --neutral-950: #0E121B;
+    --neutral-900: #272A2D;
+    --neutral-800: #606266;
+    --neutral-700: #909399;
+    --neutral-600: #C0C4CC;
+    --neutral-500: #DCDFE6;
+    --neutral-400: #E4E7ED;
+    --neutral-300: #EBEEF5;
+    --neutral-200: #F5F7FA;
+    --neutral-100: #F8F9FA;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+
+    /* ========================================
+       Semantic Color
+    ======================================== */
+
+    /* Text */
+    --color-text-primary: var(--neutral-950);
+    --color-text-secondary: var(--neutral-800);
+    --color-text-tertiary: var(--neutral-700);
+    --color-text-disabled: var(--neutral-600);
+    --color-text-inverse: var(--color-white);
+
+
+    /* Border */
+    --color-border-strong: var(--neutral-500);
+    --color-border-default: var(--neutral-400);
+    --color-border-light: var(--neutral-300);
+
+
+    /* Background */
+    --color-bg-primary: var(--color-white);
+    --color-bg-secondary: var(--neutral-100);
+    --color-bg-muted: var(--neutral-200);
+    --color-bg-inverse: var(--neutral-950);
+
+
+    /* ========================================
+       Project Color
+    ======================================== */
+
+    /*
+       프로젝트 상세 페이지에서
+       .project--dream 등의 클래스에서 덮어쓰기
+    */
+
+    /* Primary */
+    --project-primary: var(--neutral-950);
+    --project-primary-hover: var(--neutral-900);
+    --project-primary-pressed: var(--neutral-800);
+
+    --project-primary-light: var(--neutral-100);
+    --project-primary-light-hover: var(--neutral-200);
+    --project-primary-light-pressed: var(--neutral-300);
+
+
+    /* Secondary */
+    --project-secondary: var(--neutral-800);
+    --project-secondary-hover: var(--neutral-900);
+    --project-secondary-pressed: var(--neutral-950);
+
+    --project-secondary-light: var(--neutral-100);
+    --project-secondary-light-hover: var(--neutral-200);
+    --project-secondary-light-pressed: var(--neutral-300);
+
+
+    /* ========================================
+       Typography
+    ======================================== */
+
+    /* Font Family */
+    --font-family-ko: "Pretendard", sans-serif;
+    --font-family-en: "Poppins", sans-serif;
+
+
+    /* Font Size */
+    --font-size-display: clamp(40px, 3.2vw, 64px);
+
+    --font-size-h1: clamp(32px, 2.5vw, 48px);
+    --font-size-h2: clamp(26px, 1.9vw, 36px);
+    --font-size-h3: clamp(20px, 1.35vw, 28px);
+    --font-size-h4: clamp(18px, 1.1vw, 22px);
+
+    --font-size-body-lg: clamp(16px, 1vw, 18px);
+    --font-size-body-md: clamp(14px, 0.9vw, 16px);
+    --font-size-body-sm: clamp(13px, 0.8vw, 14px);
+
+    --font-size-caption: clamp(11px, 0.7vw, 12px);
+
+
+    /* Font Weight */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+    /* Line Height */
+    --line-height-display: 1.15;
+    --line-height-title: 1.4;
+    --line-height-body: 1.7;
+    --line-height-caption: 1.5;
+
+
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.03em;
+    --letter-spacing-normal: -0.01em;
+    --letter-spacing-default: 0;
+
+
+    /* ========================================
+       Layout
+    ======================================== */
+
+    --content-width: 1800px;
+
+    --content-padding-desktop: 48px;
+    --content-padding-tablet: 32px;
+    --content-padding-mobile: 20px;
+
+    --header-height: 80px;
+
+
+    /* ========================================
+       Spacing
+    ======================================== */
+
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-48: 48px;
+    --space-56: 56px;
+    --space-64: 64px;
+    --space-80: 80px;
+    --space-100: 100px;
+    --space-120: 120px;
+    --space-160: 160px;
+
+
+    /* ========================================
+       Radius
+    ======================================== */
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-round: 9999px;
+
+
+    /* ========================================
+       Transition
+    ======================================== */
+
+    --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+    --transition-fast: 0.2s var(--ease-default);
+    --transition-base: 0.3s var(--ease-default);
+    --transition-slow: 0.6s var(--ease-default);
+
+
+    /* ========================================
+       Z-index
+    ======================================== */
+
+    --z-header: 100;
+    --z-overlay: 500;
+    --z-modal: 1000;
+
+}
