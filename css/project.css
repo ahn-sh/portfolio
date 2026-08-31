@@ -328,7 +328,7 @@
 
     font-family: var(--font-family-en);
 
-    font-size: var(--font-size-display);
+    font-size: clamp(40px, 3vw, 56px);
 
     font-weight: var(--font-weight-bold);
 
@@ -368,7 +368,7 @@
 
     font-family: var(--font-family-en);
 
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-body-md);
     font-weight: var(--font-weight-semibold);
 
     color: var(--project-primary);
