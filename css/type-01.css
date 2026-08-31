@@ -797,7 +797,7 @@
 .project-strategy .project-section-heading {
     margin-bottom:
         clamp(
-            var(--space-80),
+            var(--space-48),
             7vw,
             var(--space-120)
         );
@@ -1456,7 +1456,7 @@
 .project--type-01 .project-color .project-section-heading {
     margin-bottom:
         clamp(
-            var(--space-80),
+            var(--space-48),
             8vw,
             var(--space-120)
         );
@@ -1769,7 +1769,7 @@
 .project--type-01 .project-closing__label {
     margin:
         0 0
-        var(--space-32);
+        var(--space-20);
 
     font-family: var(--font-family-en);
 
@@ -1792,7 +1792,7 @@
 
     font-weight: var(--font-weight-semibold);
 
-    line-height: 1.08;
+    line-height: 1.35;
 
     letter-spacing: -0.05em;
 
@@ -1945,7 +1945,7 @@
     }
 
     .project--type-01 .project-overview__side {
-        margin-bottom: var(--space-48);
+        margin-bottom: var(--space-20);
 
         padding-top: 0;
     }
@@ -1970,7 +1970,7 @@
     ======================================== */
 
     .project--type-01 .project-marquee {
-        min-height: 320px;
+        min-height: 240px;
     }
 
     .project--type-01
@@ -2065,7 +2065,7 @@
     }
 
     .project--type-01 .project-editorial__message {
-        min-height: 480px;
+        min-height: 360px;
 
         padding: var(--space-32);
     }
@@ -2114,7 +2114,7 @@
     }
 
     .project--type-01 .project-typography__sample {
-        min-height: 260px;
+        min-height: 160px;
 
         margin-top: var(--space-64);
     }
@@ -2128,8 +2128,8 @@
     .project--type-01 .project-typography__sample-text {
         font-size:
             clamp(
-                58px,
-                19vw,
+                52px,
+                14vw,
                 90px
             );
     }
@@ -2205,7 +2205,7 @@
     .project--type-01 .project-detail__header {
         max-width: none;
 
-        margin-bottom: var(--space-80);
+        margin-bottom: var(--space-48);
     }
 
     .project--type-01 .project-detail__eyebrow {
@@ -2227,7 +2227,7 @@
 
         min-height: 0;
 
-        margin-bottom: var(--space-120);
+        margin-bottom: var(--space-64);
     }
 
     .project--type-01
@@ -2250,7 +2250,7 @@
     ======================================== */
 
     .project--type-01 .project-closing {
-        min-height: 600px;
+        min-height: 480px;
 
         padding-block: var(--space-100);
     }

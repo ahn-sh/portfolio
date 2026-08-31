@@ -294,7 +294,7 @@
     padding-inline: var(--space-20);
 
     border:
-        1px solid var(--color-border-strong);
+        1px solid var(--color-black);
 
     border-radius: var(--radius-round);
 
@@ -615,12 +615,12 @@
 @media (max-width: 767px) {
 
     .project .container {
-        width: var(--content-padding-mobile)
+        width: 100%, var(--content-padding-mobile)
     }
 
 
     .project-section {
-        padding-block: var(--space-100);
+        padding-block: var(--space-64);
     }
 
 
