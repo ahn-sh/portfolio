@@ -615,11 +615,7 @@
 @media (max-width: 767px) {
 
     .project .container {
-        width:
-            calc(
-                100% -
-                (var(--content-padding-mobile) * 2)
-            );
+        width: var(--content-padding-mobile)
     }
 
 
