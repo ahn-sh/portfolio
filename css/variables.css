@@ -87,7 +87,8 @@
 
 
     /* Font Size */
-    --font-size-display: clamp(40px, 3.2vw, 64px);
+    --font-size-display-lg: clamp(56px, 5vw, 92px);
+    --font-size-display-xl: clamp(64px, 7vw, 120px);
 
     --font-size-h1: clamp(32px, 2.5vw, 48px);
     --font-size-h2: clamp(26px, 1.9vw, 36px);

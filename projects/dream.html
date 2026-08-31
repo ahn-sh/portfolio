@@ -11,35 +11,64 @@
 
     <title>방과후드림 | Portfolio</title>
 
-    <!-- CSS -->
+
+    <!-- ========================================
+         Style
+    ======================================== -->
+
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/common.css">
+
+    <!-- Project Common -->
     <link rel="stylesheet" href="../css/project.css">
+
+    <!-- Layout Type -->
+    <link rel="stylesheet" href="../css/type-01.css">
+
 </head>
 
 
-<body class="project project--dream">
+<body>
 
-    <header class="sub-header">
-        <div class="sub-header__inner">
 
-            <button
-                type="button"
-                class="back-button"
-                aria-label="이전 페이지로 이동"
+    <!-- ========================================
+         Fixed Project Header
+    ======================================== -->
+
+    <header class="project-header">
+
+        <div class="project-header__inner">
+
+            <a
+                href="../index.html"
+                class="project-header__back"
+                aria-label="메인으로 돌아가기"
             >
-                <span class="back-button__arrow"></span>
-            </button>
+                ←
+            </a>
 
-            <span class="sub-header__title font-en">
-                Portfolio
+
+            <span class="project-header__brand font-en">
+                PORTFOLIO
+            </span>
+
+
+            <span class="project-header__name font-en">
+                AFTER SCHOOL DREAM
             </span>
 
         </div>
+
     </header>
 
-    <main>
+
+
+    <!-- ========================================
+         Project
+    ======================================== -->
+
+    <main class="project project--dream project--type-01">
 
 
         <!-- ========================================
@@ -48,106 +77,184 @@
 
         <section class="project-hero">
 
-            <div
-                class="project-hero__bg"
-                data-parallax="0.08"
-            ></div>
+
+            <!-- Hero Navigation -->
+
+            <div class="project-hero__top">
+
+                <a
+                    href="../index.html"
+                    class="project-hero__back"
+                    aria-label="메인으로 돌아가기"
+                >
+                    ←
+                </a>
+
+
+                <span class="project-hero__brand font-en">
+                    PORTFOLIO
+                </span>
+
+
+                <nav
+                    class="project-hero__nav"
+                    aria-label="프로젝트 메뉴"
+                >
+
+                    <a
+                        href="../index.html#work"
+                        class="font-en"
+                    >
+                        PORTFOLIO
+                    </a>
+
+                    <a
+                        href="#cantact"
+                        class="font-en"
+                    >
+                        CONTACT
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- Hero Content -->
 
             <div class="container project-hero__inner">
+
+
+                <!-- Meta -->
 
                 <div
                     class="project-hero__meta"
                     data-reveal
                 >
 
-                    <div class="project-hero__meta-item">
+                    <dl class="project-hero__meta-item">
 
-                        <span class="project-hero__label font-en">
+                        <dt class="font-en">
                             CLIENT
-                        </span>
+                        </dt>
 
-                        <span class="project-hero__value">
+                        <dd>
                             교육부 · 지자체
-                        </span>
+                        </dd>
 
-                    </div>
+                    </dl>
 
 
-                    <div class="project-hero__meta-item">
+                    <dl class="project-hero__meta-item">
 
-                        <span class="project-hero__label font-en">
+                        <dt class="font-en">
                             RELEASE DATE
-                        </span>
+                        </dt>
 
-                        <span class="project-hero__value font-en">
+                        <dd class="font-en">
                             2025 — 2026
-                        </span>
+                        </dd>
 
-                    </div>
+                    </dl>
 
                 </div>
 
 
-                <div class="project-hero__bottom">
 
-                    <h1
-                        class="project-hero__title"
-                        data-reveal
-                        data-reveal-delay="100"
-                    >
+                <!-- Title -->
+
+                <div
+                    class="project-hero__title-wrap"
+                    data-reveal
+                    data-reveal-delay="100"
+                >
+
+                    <h1 class="project-hero__title">
                         방과후드림
                     </h1>
 
-                    <button
-                        type="button"
-                        class="project-hero__scroll"
-                        data-scroll-target="#overview"
-                        aria-label="아래로 이동"
+                </div>
+
+
+
+                <!-- Visual -->
+
+                <div class="project-hero__visual">
+
+                    <!--
+                    실제 Hero 이미지 적용 시
+
+                    <img
+                        src="../assets/images/dream/hero.webp"
+                        alt="방과후드림 서비스 화면"
+                        class="project-hero__image"
                     >
-                        <span class="scroll-arrow"></span>
-                        <span class="scroll-arrow"></span>
-                    </button>
+                    -->
 
                 </div>
 
             </div>
+
+
+
+            <!-- Scroll -->
+
+            <button
+                type="button"
+                class="project-hero__scroll"
+                data-scroll-target="#overview"
+                aria-label="다음 영역으로 이동"
+            >
+                ↓
+            </button>
+
 
         </section>
 
 
 
         <!-- ========================================
-            Overview
+             Experience Overview
         ======================================== -->
 
         <section
             id="overview"
             class="project-section project-overview"
         >
+
             <div class="container">
+
 
                 <div class="project-overview__layout">
 
-                    <!-- Left -->
+
+                    <!-- Side -->
+
                     <div
                         class="project-overview__side"
                         data-reveal
                     >
+
                         <span class="project-overview__label font-en">
-                            Project
+                            Experience
                         </span>
 
                         <strong class="project-overview__name font-en">
                             Overview
                         </strong>
+
                     </div>
 
 
-                    <!-- Right -->
+
+                    <!-- Main -->
+
                     <div class="project-overview__main">
 
+
                         <h2
-                            class="project-section__headline project-overview__headline"
+                            class="project-overview__headline"
                             data-reveal
                         >
                             방과후학교의 복잡한 운영 과정을
@@ -155,99 +262,68 @@
                         </h2>
 
 
+
                         <div
-                            class="project-section__description project-overview__description"
+                            class="project-overview__description"
                             data-reveal
                             data-reveal-delay="100"
                         >
+
                             <p>
                                 방과후드림은 교육 기회 확대와 사교육비 부담 완화를 위한
                                 국정과제를 기반으로 구축된 방과후학교 통합 지원 플랫폼입니다.
                             </p>
 
-                            <p>
-                                1차 서비스 구축을 통해 학부모가 프로그램 이용부터 바우처 사용 및
-                                수강료 결제까지 하나의 서비스에서 이용할 수 있는 환경을 마련하고,
-                                학교 실무자가 학생·프로그램·바우처·결제를 통합 관리할 수 있는
-                                운영 시스템을 구축했습니다.
-                            </p>
 
                             <p>
-                                이후 실제 운영 과정에서 확인된 요구사항과 정책 변화를 반영하여
-                                수강신청, 프로그램 운영 및 결제 영역까지 서비스 범위를 확장하고
-                                사용자 경험을 지속적으로 고도화했습니다.
+                                학부모가 학생과 프로그램을 확인하고,
+                                바우처를 활용해 수강료 결제까지 하나의 서비스 안에서
+                                자연스럽게 진행할 수 있도록 사용자 흐름을 설계했습니다.
                             </p>
+
+
+                            <p>
+                                또한 학교 실무자가 학생·프로그램·바우처·수강신청·결제를
+                                하나의 시스템에서 관리할 수 있도록 운영 환경을 통합했습니다.
+                            </p>
+
                         </div>
+
 
 
                         <ul
-                            class="project-overview__tags"
+                            class="project-tags"
                             data-reveal
-                            data-reveal-delay="200"
+                            data-reveal-delay="180"
                         >
-                            <li>Public Service</li>
-                            <li>UX/UI Design</li>
-                            <li>Web</li>
-                            <li>Mobile Web</li>
-                            <li>Admin</li>
+
+                            <li class="font-en">
+                                Public Service
+                            </li>
+
+                            <li class="font-en">
+                                UX/UI Design
+                            </li>
+
+                            <li class="font-en">
+                                Web
+                            </li>
+
+                            <li class="font-en">
+                                Mobile Web
+                            </li>
+
+                            <li class="font-en">
+                                Admin
+                            </li>
+
                         </ul>
 
+
                     </div>
 
                 </div>
 
-            </div>
-        </section>
-
-
-
-        <!-- ========================================
-            Experience 01
-        ======================================== -->
-
-        <section class="project-section project-story">
-
-            <div class="container">
-
-                <div class="project-section__header project-section__header--story">
-
-                    <span
-                        class="project-section__eyebrow font-en"
-                        data-reveal
-                    >
-                        01
-                    </span>
-
-                    <h2
-                        class="project-section__headline"
-                        data-reveal
-                    >
-                        프로그램 이용부터 결제까지
-                        끊김없이 이어지는 하나의 경험
-                    </h2>
-
-                    <p
-                        class="project-section__description"
-                        data-reveal
-                        data-reveal-delay="100"
-                    >
-                        학부모가 복잡한 방과후학교 운영 절차를 별도로 이해하지 않아도
-                        학생과 프로그램 정보를 확인하고 바우처를 활용해
-                        수강료 결제까지 자연스럽게 진행할 수 있도록
-                        전체 서비스 흐름을 연결했습니다.
-                    </p>
-
-                </div>
-
-
-                <div
-                    class="project-story__visual project-story__visual--wide"
-                    data-reveal
-                >
-                    <div class="project-image-placeholder font-en">
-                        PORTAL VISUAL
-                    </div>
-                </div>
 
             </div>
 
@@ -256,242 +332,292 @@
 
 
         <!-- ========================================
-            Experience 02
+             Keyword Marquee
         ======================================== -->
 
-        <section class="project-section project-story">
-
-            <div class="container">
-
-                <div class="project-section__header project-section__header--story">
-
-                    <span
-                        class="project-section__eyebrow font-en"
-                        data-reveal
-                    >
-                        02
-                    </span>
-
-                    <h2
-                        class="project-section__headline"
-                        data-reveal
-                    >
-                        필요한 정보를 쉽게 이해하고
-                        빠르게 행동할 수 있는 사용자 서비스
-                    </h2>
-
-                    <p
-                        class="project-section__description"
-                        data-reveal
-                        data-reveal-delay="100"
-                    >
-                        학생 정보와 프로그램 상태, 바우처 및 결제 정보를
-                        사용자의 이용 흐름에 맞게 제공하고,
-                        PC와 모바일 환경에서도 일관된 경험을 제공하도록 설계했습니다.
-                    </p>
-
-                </div>
+        <section class="project-marquee">
 
 
-                <div class="project-experience-grid">
+            <!-- Row 01 -->
 
-                    <!-- Left -->
-                    <article
-                        class="project-experience-card project-experience-card--left"
-                        data-reveal
-                    >
-                        <div class="project-experience-card__visual">
-                            <div class="project-image-placeholder font-en">
-                                MOBILE VISUAL
-                            </div>
-                        </div>
+            <div class="project-marquee__row">
 
-                        <div class="project-experience-card__content">
-                            <h3 class="project-experience-card__title">
-                                필요한 정보를 쉽게 찾고
-                                빠르게 행동할 수 있는 구조
-                            </h3>
-
-                            <p class="project-experience-card__description">
-                                학생과 프로그램, 바우처 및 결제 정보를
-                                이용 흐름에 맞게 구성하여 필요한 정보를 빠르게 확인하고
-                                자연스럽게 다음 행동으로 이어질 수 있도록 설계했습니다.
-                            </p>
-                        </div>
-                    </article>
+                <div class="project-marquee__track project-marquee__track--left">
 
 
-                    <!-- Right -->
-                    <article
-                        class="project-experience-card project-experience-card--right"
-                        data-reveal
-                        data-reveal-delay="150"
-                    >
-                        <div class="project-experience-card__visual">
-                            <div class="project-image-placeholder font-en">
-                                WEB VISUAL
-                            </div>
-                        </div>
+                    <div class="project-marquee__group">
 
-                        <div class="project-experience-card__content">
-                            <h3 class="project-experience-card__title">
-                                디바이스가 달라도<br>
-                                일관되게 이어지는 경험
-                            </h3>
-
-                            <p class="project-experience-card__description">
-                                PC와 모바일 환경의 사용 맥락을 고려해
-                                화면 구성과 정보 구조를 유연하게 조정하면서도
-                                동일한 서비스 흐름을 유지하도록 구성했습니다.
-                            </p>
-                        </div>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================================
-            Experience 03
-        ======================================== -->
-
-        <section class="project-section project-story">
-
-            <div class="container">
-
-                <div class="project-section__header project-section__header--story">
-
-                    <span
-                        class="project-section__eyebrow font-en"
-                        data-reveal
-                    >
-                        03
-                    </span>
-
-                    <h2
-                        class="project-section__headline"
-                        data-reveal
-                    >
-                        실제 운영에서 발견한 요구를
-                        더 나은 서비스 경험으로
-                    </h2>
-
-                    <p
-                        class="project-section__description"
-                        data-reveal
-                        data-reveal-delay="100"
-                    >
-                        서비스 운영 과정에서 확인된 사용자 요구와 정책 변화를 반영해
-                        수강신청, 추첨, 프로그램 운영, 결제 관리 등 주요 기능을 확장하고
-                        변화하는 운영 환경에 대응할 수 있도록 서비스를 고도화했습니다.
-                    </p>
-
-                </div>
-
-
-                <div
-                    class="project-story__visual project-story__visual--wide"
-                    data-reveal
-                >
-                    <div class="project-image-placeholder font-en">
-                        ENHANCEMENT VISUAL
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ========================================
-            Project Goal
-        ======================================== -->
-
-        <section class="project-goal">
-
-            <div class="container">
-
-                <div
-                    class="project-section__header project-section__header--goal"
-                    data-reveal
-                >
-
-                    <span class="project-section__eyebrow font-en">
-                        Project Goal
-                    </span>
-
-                    <h2 class="project-section__headline">
-                        복잡한 행정 구조를
-                        사용자 중심의 흐름으로 재구성
-                    </h2>
-
-                </div>
-
-
-                <div class="project-goal__grid">
-
-                    <article
-                        class="project-goal__item"
-                        data-reveal
-                    >
-                        <span class="project-goal__number font-en">
-                            01
+                        <span class="project-marquee__keyword font-en">
+                            #Colorful
                         </span>
 
-                        <h3 class="project-goal__title">
-                            흐름 연결
-                        </h3>
+                        <span class="project-marquee__keyword font-en">
+                            #Functional
+                        </span>
 
-                        <p class="project-goal__description">
-                            프로그램 이용부터 결제까지<br>
-                            하나의 사용자 경험으로 연결
-                        </p>
-                    </article>
+                        <span class="project-marquee__keyword font-en">
+                            #Neat
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Intuitive
+                        </span>
+
+
+                        <span class="project-marquee__object">
+                            ✦
+                        </span>
+
+
+                        <span class="project-marquee__keyword font-en">
+                            #Clear
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Consistent
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Duplicate -->
+
+                    <div
+                        class="project-marquee__group"
+                        aria-hidden="true"
+                    >
+
+                        <span class="project-marquee__keyword font-en">
+                            #Colorful
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Functional
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Neat
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Intuitive
+                        </span>
+
+
+                        <span class="project-marquee__object">
+                            ✦
+                        </span>
+
+
+                        <span class="project-marquee__keyword font-en">
+                            #Clear
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Consistent
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Row 02 -->
+
+            <div class="project-marquee__row">
+
+                <div class="project-marquee__track project-marquee__track--right">
+
+
+                    <div class="project-marquee__group">
+
+                        <span class="project-marquee__keyword font-en">
+                            #Simple
+                        </span>
+
+
+                        <span class="project-marquee__object">
+                            ◉
+                        </span>
+
+
+                        <span class="project-marquee__keyword font-en">
+                            #Easy
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Focused
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Readability
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Balanced
+                        </span>
+
+
+                        <span class="project-marquee__object">
+                            ⚖
+                        </span>
+
+
+                        <span class="project-marquee__keyword font-en">
+                            #Reliable
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Duplicate -->
+
+                    <div
+                        class="project-marquee__group"
+                        aria-hidden="true"
+                    >
+
+                        <span class="project-marquee__keyword font-en">
+                            #Simple
+                        </span>
+
+
+                        <span class="project-marquee__object">
+                            ◉
+                        </span>
+
+
+                        <span class="project-marquee__keyword font-en">
+                            #Easy
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Focused
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Readability
+                        </span>
+
+                        <span class="project-marquee__keyword font-en">
+                            #Balanced
+                        </span>
+
+
+                        <span class="project-marquee__object">
+                            ⚖
+                        </span>
+
+
+                        <span class="project-marquee__keyword font-en">
+                            #Reliable
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             UX Strategy
+        ======================================== -->
+
+        <section class="project-section project-strategy">
+
+            <div class="container">
+
+
+                <!-- Heading -->
+
+                <div
+                    class="project-section-heading"
+                    data-reveal
+                >
+
+                    <h2 class="project-section-heading__title font-en">
+                        UX Strategy
+                    </h2>
+
+
+                    <p class="project-section-heading__description">
+                        사용자가 복잡한 제도와 절차를 이해하지 않아도
+                        자연스럽게 서비스를 이용할 수 있도록
+                        경험의 기준을 정의했습니다.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Diagram -->
+
+                <div class="project-strategy__diagram">
 
 
                     <article
-                        class="project-goal__item"
+                        class="project-strategy__item"
+                        data-reveal
+                    >
+
+                        <strong class="project-strategy__title font-en">
+                            Intuitive
+                        </strong>
+
+                        <span class="project-strategy__description">
+                            직관적인 서비스 흐름
+                        </span>
+
+                    </article>
+
+
+
+                    <article
+                        class="project-strategy__item"
                         data-reveal
                         data-reveal-delay="100"
                     >
-                        <span class="project-goal__number font-en">
-                            02
+
+                        <strong class="project-strategy__title font-en">
+                            Connected
+                        </strong>
+
+                        <span class="project-strategy__description">
+                            끊김 없는 이용 경험
                         </span>
 
-                        <h3 class="project-goal__title">
-                            명확한 구조
-                        </h3>
-
-                        <p class="project-goal__description">
-                            복잡한 업무와 정보를 정리해<br>
-                            쉽게 이해할 수 있는 구조 설계
-                        </p>
                     </article>
 
 
+
                     <article
-                        class="project-goal__item"
+                        class="project-strategy__item"
                         data-reveal
                         data-reveal-delay="200"
                     >
-                        <span class="project-goal__number font-en">
-                            03
+
+                        <strong class="project-strategy__title font-en">
+                            Consistency
+                        </strong>
+
+                        <span class="project-strategy__description">
+                            일관된 서비스 경험
                         </span>
 
-                        <h3 class="project-goal__title">
-                            운영 효율
-                        </h3>
-
-                        <p class="project-goal__description">
-                            반복적인 실무 업무를 줄이고<br>
-                            효율적인 운영 환경 구축
-                        </p>
                     </article>
+
 
                 </div>
 
@@ -502,74 +628,91 @@
 
 
         <!-- ========================================
-            Service Evolution
+             Experience Visual
         ======================================== -->
 
-        <section class="project-section project-evolution">
+        <section class="project-section project-editorial">
 
             <div class="container">
 
-                <div
-                    class="project-section__header"
+
+                <!-- Main Visual -->
+
+                <article
+                    class="project-editorial__main"
                     data-reveal
                 >
 
-                    <span class="project-section__eyebrow font-en">
-                        Service Evolution
-                    </span>
 
-                    <h2 class="project-section__headline">
-                        서비스 구축에서
-                        운영 확장까지
-                    </h2>
-
-                </div>
-
-
-                <div class="project-evolution__grid">
-
-                    <article
-                        class="project-evolution__item"
-                        data-reveal
+                    <!--
+                    <img
+                        src="../assets/images/dream/experience-main.webp"
+                        alt="방과후드림 메인 서비스"
+                        class="project-editorial__image"
                     >
-                        <span class="project-evolution__label font-en">
-                            1ST LAUNCH
-                        </span>
+                    -->
 
-                        <h3 class="project-evolution__title">
-                            핵심 서비스 기반 구축
-                        </h3>
 
-                        <p class="project-evolution__description">
-                            학생·프로그램·바우처·결제를 중심으로
-                            방과후학교 운영에 필요한 핵심 서비스와
-                            관리자 환경을 구축했습니다.
+                    <div class="project-editorial__copy">
+
+                        <h2 class="project-editorial__title font-en">
+                            Smart<br>
+                            Experience.
+                        </h2>
+
+
+                        <p class="project-editorial__description">
+                            프로그램 이용부터 수강료 결제까지
+                            하나의 흐름으로 연결했습니다.
                         </p>
-                    </article>
+
+                    </div>
+
+                </article>
 
 
-                    <div class="project-evolution__divider"></div>
+
+                <!-- Sub Grid -->
+
+                <div class="project-editorial__grid">
 
 
                     <article
-                        class="project-evolution__item"
+                        class="project-editorial__visual"
                         data-reveal
-                        data-reveal-delay="150"
                     >
-                        <span class="project-evolution__label font-en">
-                            ENHANCEMENT
-                        </span>
 
-                        <h3 class="project-evolution__title">
-                            실제 운영 기반 서비스 확장
+                        <!--
+                        <img
+                            src="../assets/images/dream/experience-parent.webp"
+                            alt="방과후드림 학부모 서비스"
+                        >
+                        -->
+
+                    </article>
+
+
+
+                    <article
+                        class="project-editorial__message"
+                        data-reveal
+                        data-reveal-delay="100"
+                    >
+
+                        <h3>
+                            복잡한 방과후학교 정보를
+                            더 쉽고 명확하게.
                         </h3>
 
-                        <p class="project-evolution__description">
-                            운영 과정과 정책 변화를 반영해
-                            수강신청·추첨·프로그램 운영·결제 관리 등
-                            서비스 영역을 확장했습니다.
+
+                        <p>
+                            필요한 정보의 우선순위를 정리하고
+                            사용자가 현재 상태와 다음 행동을
+                            즉시 이해할 수 있도록 설계했습니다.
                         </p>
+
                     </article>
+
 
                 </div>
 
@@ -580,95 +723,94 @@
 
 
         <!-- ========================================
-            Design System
+             Typography
         ======================================== -->
 
-        <section class="project-section project-design">
+        <section class="project-section project-typography">
 
             <div class="container">
 
+
                 <div
-                    class="project-section__header"
+                    class="project-typography__card"
                     data-reveal
                 >
 
-                    <span class="project-section__eyebrow font-en">
-                        Design System
-                    </span>
 
-                    <h2 class="project-section__headline">
-                        일관된 서비스 경험을 위한
-                        방과후드림 디자인 시스템
-                    </h2>
+                    <!-- Top -->
 
-                </div>
+                    <div class="project-typography__top">
 
 
-                <div class="project-design-system">
+                        <div class="project-typography__intro">
 
-                    <!-- Typography -->
-                    <div
-                        class="project-design-system__type"
-                        data-reveal
-                    >
+                            <h2 class="project-typography__title font-en">
+                                Typography
+                            </h2>
 
-                        <span class="project-design-system__label font-en">
-                            Typography
-                        </span>
 
-                        <div class="project-design-system__type-content">
-
-                            <strong class="project-design-system__font-name">
-                                Pretendard
-                            </strong>
-
-                            <p class="project-design-system__sample">
-                                가나다 ABC abc 123 @#!?*
+                            <p class="project-typography__description">
+                                방과후드림은 높은 가독성과 안정적인 정보 전달을 위해
+                                Pretendard 서체를 기본 글꼴로 사용합니다.
                             </p>
 
-                            <div class="project-design-system__weights">
-                                <span><strong>Bold</strong> 700</span>
-                                <span><strong>Semibold</strong> 600</span>
-                                <span>Medium 500</span>
-                                <span>Regular 400</span>
-                            </div>
+                        </div>
+
+
+
+                        <div class="project-typography__weights font-en">
+
+
+                            <span class="font-weight-bold">
+                                Bold 700
+                            </span>
+
+                            <i></i>
+
+
+                            <span class="font-weight-semibold">
+                                Semibold 600
+                            </span>
+
+                            <i></i>
+
+
+                            <span class="font-weight-medium">
+                                Medium 500
+                            </span>
+
+                            <i></i>
+
+
+                            <span class="font-weight-regular">
+                                Regular 400
+                            </span>
+
 
                         </div>
 
                     </div>
 
 
-                    <!-- Color -->
-                    <div class="project-design-system__colors">
+
+                    <!-- Sample -->
+
+                    <div class="project-typography__sample">
+
 
                         <div
-                            class="project-design-color project-design-color--primary"
-                            data-reveal
-                            data-reveal-delay="100"
-                        >
-                            <strong class="font-en">Primary</strong>
-                            <span class="font-en">#6A5AE0</span>
-                        </div>
+                            class="project-typography__grid"
+                            aria-hidden="true"
+                        ></div>
 
-                        <div
-                            class="project-design-color project-design-color--secondary"
-                            data-reveal
-                            data-reveal-delay="200"
-                        >
-                            <strong class="font-en">Secondary</strong>
-                            <span class="font-en">#38B1F6</span>
-                        </div>
 
-                        <div
-                            class="project-design-color project-design-color--neutral"
-                            data-reveal
-                            data-reveal-delay="300"
-                        >
-                            <strong class="font-en">Neutral 900</strong>
-                            <span class="font-en">#272A2D</span>
-                        </div>
+                        <strong class="project-typography__sample-text font-en">
+                            Pretendard
+                        </strong>
+
 
                     </div>
+
 
                 </div>
 
@@ -679,27 +821,424 @@
 
 
         <!-- ========================================
-             Final Visual
+             Color
         ======================================== -->
 
-        <section class="project-final">
+        <section class="project-section project-color">
 
             <div class="container">
 
+
+                <!-- Heading -->
+
                 <div
-                    class="project-final__visual"
+                    class="project-section-heading"
                     data-reveal
                 >
 
-                    <div class="project-image-placeholder font-en">
-                        FINAL PROJECT VISUAL
-                    </div>
+                    <h2 class="project-section-heading__title font-en">
+                        Color
+                    </h2>
+
+
+                    <p class="project-section-heading__description">
+                        주요 색상과 보조 색상을 조화롭게 구성해
+                        일관된 브랜드 경험을 제공합니다.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Color List -->
+
+                <div class="project-color__list">
+
+
+                    <article
+                        class="project-color__item project-color__item--primary"
+                        data-reveal
+                    >
+
+                        <strong class="font-en">
+                            Blue 800
+                        </strong>
+
+                        <span class="font-en">
+                            #1473E6
+                        </span>
+
+                    </article>
+
+
+
+                    <article
+                        class="project-color__item project-color__item--secondary"
+                        data-reveal
+                        data-reveal-delay="80"
+                    >
+
+                        <strong class="font-en">
+                            Green 500
+                        </strong>
+
+                        <span class="font-en">
+                            #00B978
+                        </span>
+
+                    </article>
+
+
+
+                    <article
+                        class="project-color__item project-color__item--dark"
+                        data-reveal
+                        data-reveal-delay="160"
+                    >
+
+                        <strong class="font-en">
+                            Gray 900
+                        </strong>
+
+                        <span class="font-en">
+                            #0E121B
+                        </span>
+
+                    </article>
+
+
+
+                    <article
+                        class="project-color__item project-color__item--gray"
+                        data-reveal
+                        data-reveal-delay="240"
+                    >
+
+                        <strong class="font-en">
+                            Gray 600
+                        </strong>
+
+                        <span class="font-en">
+                            #606266
+                        </span>
+
+                    </article>
+
 
                 </div>
 
             </div>
 
         </section>
+
+
+
+        <!-- ========================================
+             Brand Visual
+        ======================================== -->
+
+        <section class="project-section project-brand">
+
+            <div class="container">
+
+
+                <div class="project-brand__grid">
+
+
+                    <!-- Logo -->
+
+                    <article
+                        class="project-brand__logo"
+                        data-reveal
+                    >
+
+                        <!--
+                        <img
+                            src="../assets/images/dream/logo-white.svg"
+                            alt="방과후드림 로고"
+                        >
+                        -->
+
+                    </article>
+
+
+
+                    <!-- Device -->
+
+                    <article
+                        class="project-brand__device"
+                        data-reveal
+                        data-reveal-delay="100"
+                    >
+
+                        <!--
+                        <img
+                            src="../assets/images/dream/app-brand.webp"
+                            alt="방과후드림 모바일 화면"
+                        >
+                        -->
+
+                    </article>
+
+
+
+                    <!-- Icons -->
+
+                    <article
+                        class="project-brand__icon"
+                        data-reveal
+                    >
+                    </article>
+
+
+                    <article
+                        class="project-brand__icon"
+                        data-reveal
+                        data-reveal-delay="80"
+                    >
+                    </article>
+
+
+                    <article
+                        class="project-brand__icon"
+                        data-reveal
+                        data-reveal-delay="160"
+                    >
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             Experience Detail
+        ======================================== -->
+
+        <section
+            id="detail"
+            class="project-section project-detail"
+        >
+
+            <div class="container">
+
+
+                <!-- Detail Heading -->
+
+                <header class="project-detail__header">
+
+
+                    <span
+                        class="project-detail__eyebrow font-en"
+                        data-reveal
+                    >
+                        Experience Detail
+                    </span>
+
+
+
+                    <h2
+                        class="project-detail__headline"
+                        data-reveal
+                    >
+                        사용자 경험의 작은 순간까지
+                        놓치지 않았습니다.
+                    </h2>
+
+
+
+                    <p
+                        class="project-detail__description"
+                        data-reveal
+                        data-reveal-delay="100"
+                    >
+                        처음 서비스를 이용하는 사용자도 자연스럽게 다음 행동을 이해할 수 있도록
+                        상태와 피드백을 세밀하게 설계했습니다.
+                    </p>
+
+
+                </header>
+
+
+
+                <!-- Detail 01 -->
+
+                <article class="project-detail__row">
+
+
+                    <div
+                        class="project-detail__visual"
+                        data-reveal
+                    >
+
+                        <!--
+                        <img
+                            src="../assets/images/dream/detail-01.webp"
+                            alt="방과후드림 수강신청 화면"
+                        >
+                        -->
+
+                    </div>
+
+
+
+                    <div
+                        class="project-detail__content"
+                        data-reveal
+                        data-reveal-delay="100"
+                    >
+
+                        <span class="project-detail__index font-en">
+                            01 / Application
+                        </span>
+
+
+                        <h3 class="project-detail__title">
+                            신청 가능한 상태를
+                            한눈에 이해할 수 있도록
+                        </h3>
+
+
+                        <p class="project-detail__text">
+                            프로그램 일정과 모집 방식,
+                            신청 가능 여부와 현재 상태를 명확하게 제공해
+                            사용자가 다음 행동을 자연스럽게 이해할 수 있도록 구성했습니다.
+                        </p>
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- Detail 02 -->
+
+                <article class="project-detail__row project-detail__row--reverse">
+
+
+                    <div
+                        class="project-detail__visual"
+                        data-reveal
+                    >
+
+                        <!--
+                        <img
+                            src="../assets/images/dream/detail-02.webp"
+                            alt="방과후드림 결제 화면"
+                        >
+                        -->
+
+                    </div>
+
+
+
+                    <div
+                        class="project-detail__content"
+                        data-reveal
+                        data-reveal-delay="100"
+                    >
+
+                        <span class="project-detail__index font-en">
+                            02 / Payment
+                        </span>
+
+
+                        <h3 class="project-detail__title">
+                            바우처부터 수강료까지
+                            자연스럽게 이어지는 결제
+                        </h3>
+
+
+                        <p class="project-detail__text">
+                            사용 가능한 바우처와 결제 금액,
+                            납부 상태를 단계적으로 제공해
+                            복잡한 결제 과정을 보다 쉽게 이해할 수 있도록 구성했습니다.
+                        </p>
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             Closing
+        ======================================== -->
+
+        <section class="project-closing">
+
+            <div class="container">
+
+
+                <div
+                    class="project-closing__content"
+                    data-reveal
+                >
+
+                    <p class="project-closing__label font-en">
+                        AFTER SCHOOL DREAM
+                    </p>
+
+
+                    <h2 class="project-closing__headline">
+                        교육의 기회를 연결하고,</br>
+                        더 나은 방과후 경험을 만듭니다.
+                    </h2>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             Next Project
+        ======================================== -->
+
+        <footer class="project-next">
+
+            <div class="container">
+
+
+                <p class="project-next__label font-en">
+                    Next Project
+                </p>
+
+
+                <a
+                    href="./fintech.html"
+                    class="project-next__link"
+                >
+
+                    <span>
+                        한국핀테크산업협회
+                    </span>
+
+                    <span aria-hidden="true">
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </footer>
 
 
     </main>
@@ -707,38 +1246,30 @@
 
 
     <!-- ========================================
-         Footer
+         Top Button
     ======================================== -->
 
-    <footer class="footer">
-
-        <div class="container footer__inner">
-
-            <p class="footer__copyright">
-                © 2026 AHNSOHYUN. All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
-    <!-- ==============================
-        Top Button
-    =============================== -->
     <button
         type="button"
         class="top-button"
         aria-label="페이지 상단으로 이동"
     >
-        <span class="top-button__arrow">↑</span>
+
+        <span class="top-button__arrow">
+            ↑
+        </span>
+
     </button>
 
 
-    <!-- ==============================
-            script
-    =============================== -->
+
+    <!-- ========================================
+         Script
+    ======================================== -->
+
     <script src="../js/common.js"></script>
     <script src="../js/project.js"></script>
+
 
 </body>
 

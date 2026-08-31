@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initParallax();
     initScrollUI();
     initBackButton();
+
+    initStrategy();
 });
 
 
@@ -311,4 +313,43 @@ function initBackButton() {
                 "../index.html";
         }, 400);
     });
+}
+
+
+/* ========================================
+   type-01 Strategy
+======================================== */
+
+function initStrategy() {
+
+    const strategy = document.querySelector(".project-strategy");
+
+    if (!strategy) return;
+
+
+    if (!("IntersectionObserver" in window)) {
+        strategy.classList.add("is-active");
+        return;
+    }
+
+
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+
+            if (!entry.isIntersecting) return;
+
+            strategy.classList.add("is-active");
+
+            observer.unobserve(strategy);
+
+        },
+        {
+            threshold: 0.25,
+            rootMargin: "0px 0px -10% 0px"
+        }
+    );
+
+
+    observer.observe(strategy);
+
 }
