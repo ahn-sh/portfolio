@@ -11,25 +11,36 @@
 
 
 /* ========================================
-   Project Theme
+   Project Theme - Dream
 ======================================== */
 
 .project--dream {
-    --project-primary: #1473E6;
-    --project-primary-hover: #0F65D1;
-    --project-primary-pressed: #0A55B4;
 
-    --project-primary-light: #EAF4FF;
-    --project-primary-light-hover: #DCEEFF;
-    --project-primary-light-pressed: #CBE5FF;
+    /* Primary
+       Purple
+    ======================================== */
 
-    --project-secondary: #00B978;
-    --project-secondary-hover: #00A66C;
-    --project-secondary-pressed: #008E5D;
+    --project-primary: #6A5AE0;
+    --project-primary-hover: #5747DB;
+    --project-primary-pressed: #4333D5;
 
-    --project-secondary-light: #E8FAF4;
-    --project-secondary-light-hover: #D9F6EC;
-    --project-secondary-light-pressed: #C6F0E2;
+    --project-primary-light: #F1EFFF;
+    --project-primary-light-hover: #E4E0FF;
+    --project-primary-light-pressed: #C8C4FF;
+
+
+    /* Secondary
+       Blue
+    ======================================== */
+
+    --project-secondary: #38B1F6;
+    --project-secondary-hover: #1F9DEB;
+    --project-secondary-pressed: #0A86D9;
+
+    --project-secondary-light: #EDF8FF;
+    --project-secondary-light-hover: #D7F0FF;
+    --project-secondary-light-pressed: #B9E5FF;
+
 }
 
 
