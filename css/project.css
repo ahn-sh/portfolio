@@ -40,7 +40,35 @@
     --project-secondary-light: #EDF8FF;
     --project-secondary-light-hover: #D7F0FF;
     --project-secondary-light-pressed: #B9E5FF;
+}
 
+
+/* ========================================
+   Project Theme - Fintech
+======================================== */
+
+.project--fintech {
+
+    /* Primary
+       Blue
+    ======================================== */
+
+    --project-primary: #2C93F2;
+    --project-primary-hover: #1B85E8;
+    --project-primary-pressed: #1677D3;
+
+    --project-primary-light: #EBF5FF;
+    --project-primary-light-hover: #D5E9FF;
+    --project-primary-light-pressed: #8FC1FF;
+
+
+    /* Secondary
+       Navy
+    ======================================== */
+
+    --project-secondary: #042A4D;
+    --project-secondary-hover: #0C3F72;
+    --project-secondary-pressed: #10345A;
 }
 
 
@@ -103,6 +131,7 @@
         background-color var(--transition-base);
 }
 
+
 .project-header.is-visible {
     opacity: 1;
     visibility: visible;
@@ -110,10 +139,16 @@
     transform: translateY(0);
 
     background:
-        rgba(255, 255, 255, 0.92);
+        rgba(
+            255,
+            255,
+            255,
+            0.92
+        );
 
     backdrop-filter: blur(16px);
 }
+
 
 .project-header__inner {
     display: grid;
@@ -128,6 +163,7 @@
     padding-inline:
         var(--content-padding-desktop);
 }
+
 
 .project-header__back {
     display: flex;
@@ -148,6 +184,7 @@
         transform var(--transition-base);
 }
 
+
 .project-header__brand {
     justify-self: center;
 
@@ -158,6 +195,7 @@
 
     letter-spacing: var(--letter-spacing-default);
 }
+
 
 .project-header__name {
     justify-self: end;
@@ -184,6 +222,7 @@
 
 /* ========================================
    Hero Base
+   실제 Hero Layout은 각 Type CSS에서 관리
 ======================================== */
 
 .project-hero {
@@ -191,6 +230,7 @@
 
     overflow: hidden;
 }
+
 
 .project-hero__image {
     display: block;
@@ -206,6 +246,7 @@
    Overview / Detail
    Common Typography
 ======================================== */
+
 
 /* Small Heading */
 
@@ -294,6 +335,7 @@
     gap: var(--space-8);
 }
 
+
 .project-tags li {
     display: flex;
 
@@ -305,7 +347,8 @@
     padding-inline: var(--space-20);
 
     border:
-        1px solid var(--color-black);
+        1px solid
+        var(--color-black);
 
     border-radius: var(--radius-round);
 
@@ -332,6 +375,7 @@
     text-align: center;
 }
 
+
 .project-section-heading__title {
     margin:
         0 0
@@ -339,7 +383,12 @@
 
     font-family: var(--font-family-en);
 
-    font-size: clamp(40px, 3vw, 56px);
+    font-size:
+        clamp(
+            40px,
+            3vw,
+            56px
+        );
 
     font-weight: var(--font-weight-bold);
 
@@ -349,6 +398,7 @@
 
     color: var(--color-text-primary);
 }
+
 
 .project-section-heading__description {
     max-width: 850px;
@@ -385,6 +435,7 @@
     color: var(--project-primary);
 }
 
+
 .project-detail__title {
     margin: 0;
 
@@ -405,6 +456,7 @@
 
     word-break: keep-all;
 }
+
 
 .project-detail__text {
     margin: 0;
@@ -438,6 +490,7 @@
         transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+
 [data-reveal].is-visible {
     opacity: 1;
 
@@ -452,6 +505,7 @@
 
 /* ========================================
    Next Project
+   Type과 관계없이 공통 사용
 ======================================== */
 
 .project-next {
@@ -467,6 +521,7 @@
     color: var(--color-text-inverse);
 }
 
+
 .project-next__label {
     margin:
         0 0
@@ -479,6 +534,7 @@
     color: var(--color-text-disabled);
 }
 
+
 .project-next__link {
     display: flex;
 
@@ -490,7 +546,13 @@
     padding-bottom: var(--space-24);
 
     border-bottom:
-        1px solid rgba(255, 255, 255, 0.2);
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.2
+        );
 
     font-size:
         clamp(
@@ -544,6 +606,7 @@
     padding: 0;
 
     border: 0;
+
     border-radius: var(--radius-round);
 
     background: var(--neutral-900);
@@ -556,7 +619,9 @@
     visibility: hidden;
 
     transform:
-        translateY(var(--space-12));
+        translateY(
+            var(--space-12)
+        );
 
     transition:
         opacity var(--transition-base),
@@ -565,12 +630,14 @@
         background-color var(--transition-fast);
 }
 
+
 .top-button.is-visible {
     opacity: 1;
     visibility: visible;
 
     transform: translateY(0);
 }
+
 
 .top-button__arrow {
     display: flex;
@@ -603,6 +670,8 @@
 
 @media (max-width: 1024px) {
 
+    /* Container */
+
     .project .container {
         width:
             calc(
@@ -610,6 +679,9 @@
                 (var(--content-padding-tablet) * 2)
             );
     }
+
+
+    /* Header */
 
     .project-header__inner {
         padding-inline:
@@ -625,17 +697,31 @@
 
 @media (max-width: 767px) {
 
+    /* ========================================
+       Container
+    ======================================== */
+
     .project .container {
-        width: 100%, var(--content-padding-mobile)
+        width:
+            calc(
+                100% -
+                (var(--content-padding-mobile) * 2)
+            );
     }
 
+
+    /* ========================================
+       Common Section
+    ======================================== */
 
     .project-section {
         padding-block: var(--space-64);
     }
 
 
-    /* Header */
+    /* ========================================
+       Header
+    ======================================== */
 
     .project-header__inner {
         height: var(--space-64);
@@ -644,12 +730,15 @@
             var(--content-padding-mobile);
     }
 
+
     .project-header__name {
         display: none;
     }
 
 
-    /* Overview / Detail Common */
+    /* ========================================
+       Overview / Detail Common
+    ======================================== */
 
     .project-overview__label,
     .project-overview__name,
@@ -657,12 +746,14 @@
         font-size: var(--font-size-body-lg);
     }
 
+
     .project-overview__headline,
     .project-detail__headline {
         font-size: var(--font-size-h1);
 
         line-height: var(--line-height-title);
     }
+
 
     .project-overview__description,
     .project-detail__description {
@@ -672,11 +763,14 @@
     }
 
 
-    /* Tags */
+    /* ========================================
+       Tags
+    ======================================== */
 
     .project-tags {
         gap: var(--space-8);
     }
+
 
     .project-tags li {
         min-height: 38px;
@@ -687,22 +781,57 @@
     }
 
 
-    /* Center Heading */
+    /* ========================================
+       Center Heading
+    ======================================== */
 
     .project-section-heading__title {
         font-size: var(--font-size-h1);
     }
+
 
     .project-section-heading__description {
         font-size: var(--font-size-body-md);
     }
 
 
-    /* Top */
+    /* ========================================
+       Next Project
+    ======================================== */
+
+    .project-next {
+        padding-block:
+            var(--space-80);
+    }
+
+
+    .project-next__label {
+        margin-bottom:
+            var(--space-20);
+    }
+
+
+    .project-next__link {
+        gap: var(--space-20);
+
+        padding-bottom:
+            var(--space-20);
+
+        font-size:
+            var(--font-size-h1);
+    }
+
+
+    /* ========================================
+       Top Button
+    ======================================== */
 
     .top-button {
-        right: var(--content-padding-mobile);
-        bottom: var(--content-padding-mobile);
+        right:
+            var(--content-padding-mobile);
+
+        bottom:
+            var(--content-padding-mobile);
 
         width: 44px;
         height: 44px;
