@@ -735,11 +735,7 @@
     ======================================== */
 
     .project .container {
-        width:
-            calc(
-                100% -
-                (var(--content-padding-mobile) * 2)
-            );
+        width:100%;
     }
 
 

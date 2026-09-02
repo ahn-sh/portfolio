@@ -1047,6 +1047,127 @@
 
 
 /* ========================================
+   Direction - Mobile
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* 상단 AS-IS / TO-BE 라벨 숨김 */
+    .project--type-02 .project-direction__labels {
+        display: none;
+    }
+
+
+    /* 각 변환 항목 */
+    .project--type-02 .project-direction__row {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: var(--space-20);
+        margin-bottom: var(--space-48);
+    }
+
+
+    /* 공통 카드 */
+    .project--type-02 .project-direction__before,
+    .project--type-02 .project-direction__after {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        max-width: none !important;
+        min-height: auto;
+
+        margin: 0 !important;
+        padding: var(--space-20) var(--space-24);
+
+        transform: none !important;
+
+        border-radius: var(--radius-lg);
+
+        text-align: center;
+
+        font-size: var(--font-size-body-md);
+        line-height: var(--line-height-title);
+
+        word-break: keep-all;
+    }
+
+
+    /* AS-IS 카드 */
+    .project--type-02 .project-direction__before {
+        border: 1px solid var(--color-border-light);
+
+        background: var(--color-bg-muted);
+
+        color: var(--color-text-secondary);
+    }
+
+
+    /* AS-IS → TO-BE 연결 */
+    .project--type-02 .project-direction__before::after {
+        content: "↓";
+
+        position: absolute;
+
+        left: 50%;
+        bottom: -22px;
+
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+
+        background: var(--color-bg-primary);
+
+        color: var(--project-secondary);
+
+        font-family: var(--font-family-en);
+        font-size: var(--font-size-body-sm);
+        font-weight: var(--font-weight-semibold);
+
+        z-index: 2;
+    }
+
+
+    /* TO-BE 카드 */
+    .project--type-02 .project-direction__after {
+        background: var(--project-secondary);
+
+        color: var(--color-text-inverse);
+
+        font-weight: var(--font-weight-semibold);
+
+        box-shadow:
+            0 12px 28px rgba(4, 42, 77, 0.10);
+    }
+
+
+    /* 마지막 항목 여백 제거 */
+    .project--type-02 .project-direction__row:last-child {
+        margin-bottom: 0;
+    }
+
+    .project--type-02 .project-direction__intro {
+        margin-bottom: 0;
+    }
+
+}
+
+
+/* ========================================
    Process
 ======================================== */
 
@@ -2040,7 +2161,7 @@
             var(--space-32)
             var(--space-20);
 
-        border-radius: var(--radius-xl);
+        border-radius: var(--radius-round);
     }
 
     .project--type-02 .project-challenge__circles {
