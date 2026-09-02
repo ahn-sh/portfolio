@@ -73,6 +73,39 @@
 
 
 /* ========================================
+   Project Theme - Gongsil Today
+======================================== */
+
+.project--gongsil {
+
+    /* Primary
+       Blue
+    ======================================== */
+
+    --project-primary: #0086FF;
+    --project-primary-hover: #0078E6;
+    --project-primary-pressed: #006ACC;
+
+    --project-primary-light: #E6F3FF;
+    --project-primary-light-hover: #D6EBFF;
+    --project-primary-light-pressed: #B8DCFF;
+
+
+    /* Secondary
+       Yellow
+    ======================================== */
+
+    --project-secondary: #FFCE00;
+    --project-secondary-hover: #EFC100;
+    --project-secondary-pressed: #DDB300;
+
+    --project-secondary-light: #FFF9E0;
+    --project-secondary-light-hover: #FFF3BF;
+    --project-secondary-light-pressed: #FFE98A;
+}
+
+
+/* ========================================
    Container
 ======================================== */
 
