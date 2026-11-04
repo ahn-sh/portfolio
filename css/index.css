@@ -268,3 +268,24 @@ body {
         transition: none;
     }
 }
+
+@media (max-width: 767px) {
+  .work__info p {
+    font-size: var(--k-r---caption---c12r);
+    line-height: 1.5;
+  }
+
+  .work__info p .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .work__info p span:not(.separator) {
+    display: block;
+  }
+
+  .work__info p .separator {
+    display: none;
+  }
+}

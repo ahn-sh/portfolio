@@ -40,6 +40,13 @@ body {
     opacity: 1;
     transition: opacity 0.2s ease;
 
+    /* 한글 줄바꿈 */
+    word-break: keep-all;
+    overflow-wrap: break-word;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
     /* 절대 transform 넣지 않음 */
 }
 
