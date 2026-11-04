@@ -1,184 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>안소현 | Portfolio</title>
-
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AHNSOHYUN</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
-    <main class="portfolio">
-
-        <!-- ==============================
-             Intro
-        =============================== -->
-        <section class="intro">
-            <div class="container">
-
-                <span class="intro__label font-en">
-                    PORTFOLIO
-                </span>
-
-                <h1 class="intro__title">
-                    사용자와 서비스의 흐름을 이해하고
-                    더 나은 경험을 디자인합니다.
-                </h1>
-
-            </div>
+    <main class="works">
+        <header class="works__heading"><span>AHNSOHYUN</span><span>PORTFOLIO</span></header>
+        <section class="works__intro" aria-label="포트폴리오 소개">
+            <div class="works__intro-copy">
+                <h1>Things I've<br><em>Made.</em></h1>
+                <p class="works__description">아이디어를 화면으로, 경험을 디자인으로.<br>다양한 프로젝트와 작업을 소개합니다.</p>
+            </div><a class="resume-button" href="resume-template.html" download="resume-template.html"
+                aria-label="이력서 양식 다운로드"><span>이력서 다운</span><span class="resume-button__icon"
+                    aria-hidden="true">↘</span></a>
         </section>
-
-
-        <!-- ==============================
-             Project List
-        =============================== -->
-        <section class="portfolio-work">
-
-            <div class="container">
-
-                <div class="portfolio-work__header">
-
-                    <h2 class="portfolio-work__title font-en">
-                        Featured Projects
-                    </h2>
-
+        <section class="works__grid" aria-label="프로젝트 목록">
+            <a class="work" href="#" aria-label="방과후 드림 프로젝트 상세 보기"><img
+                    src="images/project-01.png" alt="방과후 드림 프로젝트 썸네일" loading="eager">
+                <div class="work__overlay"><span class="work__index">PROJECT 01</span>
+                    <div class="work__info">
+                        <h2>방과후드림</h2>
+                        <p>교육부 · 방과후 교육 통합 플랫폼</p>
+                    </div><span class="work__arrow" aria-hidden="true">↗</span>
                 </div>
-
-
-                <div id="workGrid" class="work-grid">
-
-                    <!-- 방과후드림 -->
-                    <article class="work-card" data-year="2025" data-order="">
-
-                        <a
-                            href="./projects/dream.html"
-                            class="work-card__link"
-                        >
-
-                            <div class="work-card__thumbnail">
-
-                                <img
-                                    src="./images/dream/thumbnail.png"
-                                    alt="방과후드림 프로젝트"
-                                    class="work-card__image"
-                                >
-
-                            </div>
-
-                            <div class="work-card__info">
-
-                                <h3 class="work-card__title">
-                                    방과후드림
-                                </h3>
-
-                                <p class="work-card__category font-en">
-                                    Public Service / Web · Mobile
-                                </p>
-
-                            </div>
-
-                        </a>
-
-                    </article>
-
-
-                    <!-- 핀테크산업협회 -->
-                    <article class="work-card" data-year="2026" data-order="">
-
-                        <a
-                            href="./projects/fintech.html"
-                            class="work-card__link"
-                        >
-
-                            <div class="work-card__thumbnail">
-
-                                <img
-                                    src="./images/fintech/thumbnail.png"
-                                    alt="한국핀테크산업협회"
-                                    class="work-card__image"
-                                >
-
-                            </div>
-
-                            <div class="work-card__info">
-
-                                <h3 class="work-card__title">
-                                    한국핀테크산업협회 홈페이지 리뉴얼
-                                </h3>
-
-                                <p class="work-card__category font-en">
-                                    Association / Responsive Web
-                                </p>
-
-                            </div>
-
-                        </a>
-
-                    </article>
-
-                    <!-- 공실투데이 -->
-                    <article class="work-card" data-year="2023">
-
-                        <a
-                            href="./projects/gongsil.html"
-                            class="work-card__link"
-                        >
-
-                            <div class="work-card__thumbnail">
-
-                                <img
-                                    src="./images/gongsil/thumbnail.png"
-                                    alt="공실투데이"
-                                    class="work-card__image"
-                                >
-
-                            </div>
-
-                            <div class="work-card__info">
-
-                                <h3 class="work-card__title">
-                                    공실투데이 서비스 구축
-                                </h3>
-
-                                <p class="work-card__category font-en">
-                                    Proptech / Multi-Platform
-                                </p>
-
-                            </div>
-
-                        </a>
-
-                    </article>
-
+            </a>
+            <a class="work" href="#" aria-label="한국핀테크산업협회 프로젝트 상세 보기"><img
+                    src="images/project-02.png" alt="한국핀테크산업협회 프로젝트 썸네일" loading="eager">
+                <div class="work__overlay"><span class="work__index">PROJECT 02</span>
+                    <div class="work__info">
+                        <h2>한국핀테크산업협회</h2>
+                        <p>한국핀테크산업협회 · 공식 홈페이지 리뉴얼</p>
+                    </div><span class="work__arrow" aria-hidden="true">↗</span>
                 </div>
-
-            </div>
-
+            </a>
+            <a class="work" href="#" aria-label="공실투데이 프로젝트 상세 보기"><img
+                    src="images/project-03.jpg" alt="공실투데이 프로젝트 썸네일" loading="eager">
+                <div class="work__overlay"><span class="work__index">PROJECT 03</span>
+                    <div class="work__info">
+                        <h2>공실투데이</h2>
+                        <p>공실투데이 · 프롭테크 플랫폼</p>
+                    </div><span class="work__arrow" aria-hidden="true">↗</span>
+                </div>
+            </a>
         </section>
-
+        <footer class="works__footer">© 2026 PORTFOLIO</footer>
     </main>
-
-    <footer class="footer">
-        <div class="container footer__inner">
-            <p class="footer__copyright">
-                © 2026 AHNSOHYUN. All Rights Reserved.
-            </p>
-        </div>
-    </footer>
-
-    
-    <!-- ==============================
-            script
-    =============================== -->
-    <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
 </body>
 
 </html>
