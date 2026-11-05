@@ -171,10 +171,8 @@ p {
 
 .marquee {
     overflow: hidden;
-    padding: 90px 0;
+    padding: 40px 0;
     background: var(--static---white);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
 }
 
 .marquee-line {
@@ -591,7 +589,7 @@ body.has-left-hero .top {
     }
 
     .marquee {
-        padding: 60px 0;
+        padding: 20px 0;
     }
 
     .marquee-line {
