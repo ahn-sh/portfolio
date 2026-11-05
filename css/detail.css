@@ -34,7 +34,6 @@ p {
 .intro {
     position: relative;
     background: white;
-    min-height: 90svh;
     display: flex;
     align-items: center;
     padding: var(--space-section) var(--page-gutter);
@@ -2175,7 +2174,6 @@ body.has-left-hero .top {
 
 .challenge-editorial .bottom-copy {
     margin-top: clamp(65px, 9vw, 120px);
-    max-width: 780px
 }
 
 @media(max-width:767px) {

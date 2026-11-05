@@ -114,5 +114,5 @@
   --space-5: clamp(40px, calc(26.667px + 3.7037vw), 80px);
   --space-6: clamp(64px, calc(37.333px + 7.4074vw), 144px);
   --space-section: clamp(85px, calc(60px + 6.9444vw), 160px);
-  --page-gutter: clamp(20px, 12vw, 240px);
+  --page-gutter: clamp(20px, 16vw, 400px);
 }
