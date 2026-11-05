@@ -297,7 +297,7 @@ header a {
 }
 
 .strength {
-    padding: 130px 7% 90px
+    padding: 160px 7%;
 }
 
 .strength-grid {
@@ -364,7 +364,7 @@ header a {
 }
 
 .content {
-    padding: 120px 7%;
+    padding: 160px 7%;
     background: var(--grey--100)
 }
 
@@ -377,7 +377,7 @@ header a {
 }
 
 .content-head p {
-    max-width: 430px;
+    max-width: 32%;
     line-height: 1.9;
     color: var(--grey--700)
 }
@@ -488,9 +488,11 @@ header a {
     background: var(--semantic---blue--500);
     color: white;
     border-radius: 100px;
-    padding: 14px 28px;
-    font-size: var(--body-b14);
-    font-weight: var(--font-weight-bold);
+    min-width: 160px;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: var(--body-b16);
+    font-weight: var(--font-weight-medium);
     box-shadow: 0 6px 30px #0002
 }
 

@@ -18,8 +18,9 @@
 
   // Lenis enhances mouse-wheel scrolling while retaining native touch scrolling.
   // If the CDN is unavailable, browser-native scrolling remains functional.
+  let lenis = null;
   if (!reducedMotion.matches && typeof window.Lenis === 'function') {
-    const lenis = new window.Lenis({
+    lenis = new window.Lenis({
       duration: 1.15,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
@@ -32,22 +33,22 @@
       event.preventDefault();
       lenis.scrollTo('#project-intro', { offset: 0 });
     });
-    document.querySelector('#backToTop')?.addEventListener('click', (event) => {
-      event.stopImmediatePropagation();
-      lenis.scrollTo(0);
-    });
+
   }
 
   const hero = document.querySelector('.hero');
   const cue = document.querySelector('.scroll-cue');
+  const intro = document.querySelector('#project-intro');
+  const footer = document.querySelector('footer.end');
   let ticking = false;
 
   function updateHeroScroll() {
     ticking = false;
     if (!hero || !cue) return;
     // The controls only appear after the hero's bottom edge leaves the viewport.
-    const passedHero = document.querySelector('#project-intro')?.getBoundingClientRect().top <= 0;
-    document.body.classList.toggle('has-left-hero', passedHero);
+    const passedHero = !!intro && intro.getBoundingClientRect().top <= 0;
+    const footerReached = !!footer && footer.getBoundingClientRect().top <= window.innerHeight;
+    document.body.classList.toggle('has-left-hero', passedHero && !footerReached);
     if (reducedMotion.matches) return;
     const scrollY = Math.max(0, window.scrollY);
     const progress = Math.min(scrollY / Math.max(hero.offsetHeight, 1), 1);
@@ -67,7 +68,22 @@
   window.addEventListener('resize', onScroll, { passive: true });
   updateHeroScroll();
 
-  document.querySelector('#backToTop')?.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+  function scrollToTop(event) {
+    event.preventDefault();
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.2 });
+    } else {
+      window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+    }
+  }
+
+  // Floating TOP and footer BACK TO TOP share one handler.
+  document.querySelector('#backToTop')?.addEventListener('click', scrollToTop);
+  // Event delegation works on project01, project02, and later detail pages,
+  // even when the footer markup uses different classes.
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href="#top"], a[data-scroll-top]');
+    if (!link || !link.closest('footer')) return;
+    scrollToTop(event);
   });
 })();
