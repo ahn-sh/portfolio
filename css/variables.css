@@ -41,64 +41,35 @@
   --semantic---etc---link: rgba(22, 119, 255, 1);
   --semantic---etc---link-active: rgba(9, 88, 217, 1);
 
-  /* Typography sizes */
-  --k-r---title---t1: 96px;
-  --k-r---title---t2: 80px;
-  --k-r---title---t3: 72px;
-  --k-r---title---t4: 64px;
-  --k-r---title---t5: 56px;
-  --k-r---header---h1: 48px;
-  --k-r---header---h2: 40px;
-  --k-r---header---h3: 32px;
-  --k-r---header---h4: 28px;
-  --k-r---header---h5: 24px;
-  --k-r---header---h6: 20px;
-  --k-r---body---b20m: 20px;
-  --k-r---body---b20r: 20px;
-  --k-r---body---b18b: 18px;
-  --k-r---body---b18m: 18px;
-  --k-r---body---b18r: 18px;
-  --k-r---body---b16b: 16px;
-  --k-r---body---b16m: 16px;
-  --k-r---body---b16r: 16px;
-  --k-r---body---b14b: 14px;
-  --k-r---body---b14m: 14px;
-  --k-r---body---b14r: 14px;
-  --k-r---caption---c12b: 12px;
-  --k-r---caption---c12m: 12px;
-  --k-r---caption---c12r: 12px;
-  --k-r---caption---c10b: 10px;
-  --k-r---caption---c10m: 10px;
-  --k-r---caption---c10r: 10px;
+  /* Typography - Title */
+  --title-t1: 96px;
+  --title-t2: 80px;
+  --title-t3: 72px;
+  --title-t4: 64px;
+  --title-t5: 56px;
 
-  --e-n---title---t1: 96px;
-  --e-n---title---t2: 80px;
-  --e-n---title---t3: 72px;
-  --e-n---title---t4: 64px;
-  --e-n---title---t5: 56px;
-  --e-n---header---h1: 48px;
-  --e-n---header---h2: 40px;
-  --e-n---header---h3: 32px;
-  --e-n---header---h4: 28px;
-  --e-n---header---h5: 24px;
-  --e-n---header---h6: 20px;
-  --e-n---body---b20m: 20px;
-  --e-n---body---b20r: 20px;
-  --e-n---body---b18b: 18px;
-  --e-n---body---b18m: 18px;
-  --e-n---body---b18r: 18px;
-  --e-n---body---b16b: 16px;
-  --e-n---body---b16m: 16px;
-  --e-n---body---b16r: 16px;
-  --e-n---body---b14b: 14px;
-  --e-n---body---b14m: 14px;
-  --e-n---body---b14r: 14px;
-  --e-n---caption---c12b: 12px;
-  --e-n---caption---c12m: 12px;
-  --e-n---caption---c12r: 12px;
-  --e-n---caption---c10b: 10px;
-  --e-n---caption---c10m: 10px;
-  --e-n---caption---c10r: 10px;
+  /* Typography - Header */
+  --header-h1: 48px;
+  --header-h2: 40px;
+  --header-h3: 32px;
+  --header-h4: 28px;
+  --header-h5: 24px;
+  --header-h6: 20px;
+
+  /* Typography - Body */
+  --body-b18: 18px;
+  --body-b16: 16px;
+  --body-b14: 14px;
+
+  /* Typography - Caption */
+  --caption-c12: 12px;
+  --caption-c10: 10px;
+
+  /* Font Weight */
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
 
   /* Effects */
   --high: 0px 6px 16px rgba(0,0,0,.08), 0px 3px 6px rgba(0,0,0,.12), 0px 9px 28px rgba(0,0,0,.05);

@@ -2,11 +2,41 @@
    Font Import
 ======================================== */
 
-/* Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* English - Poppins */
+@font-face {
+    font-family: 'PortfolioFont';
+    src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    unicode-range: U+0000-007F;
+}
 
-/* Pretendard */
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'PortfolioFont';
+    src: url('/fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    unicode-range: U+0000-007F;
+}
+
+@font-face {
+    font-family: 'PortfolioFont';
+    src: url('/fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: 700;
+    unicode-range: U+0000-007F;
+}
+
+/* Korean - Pretendard */
+@font-face {
+    font-family: 'PortfolioFont';
+    src: url('/fonts/PretendardVariable.woff2') format('woff2');
+    font-weight: 100 900;
+    unicode-range:
+        U+AC00-D7A3,
+        U+1100-11FF,
+        U+3130-318F,
+        U+A960-A97F,
+        U+D7B0-D7FF;
+}
+
 
 
 /* ========================================
@@ -25,9 +55,8 @@ html {
 body {
     min-width: 320px;
 
-    font-family: var(--font-family-ko);
-    font-size: var(--k-r---body---b16r);
-    font-weight: 400;
+    font-size: var(--kr---body---b16);
+    font-weight: var(--font-weight-regular);
     line-height: 1.7;
     letter-spacing: -.01em;
 
@@ -106,56 +135,56 @@ body.is-page-leaving main {
 
 .heading-display {
     font-size: var(--e-n---title---t4);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 1.15;
     letter-spacing: -.03em;
 }
 
 .heading-1 {
     font-size: var(--k-r---header---h1);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.03em;
 }
 
 .heading-2 {
     font-size: var(--k-r---header---h2);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.03em;
 }
 
 .heading-3 {
-    font-size: var(--k-r---header---h3);
-    font-weight: 600;
+    font-size: var(--header-h3);
+    font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.01em;
 }
 
 .heading-4 {
-    font-size: var(--k-r---header---h4);
-    font-weight: 600;
+    font-size: var(--header-h4);
+    font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.01em;
 }
 
 .body-lg {
-    font-size: var(--k-r---body---b18r);
+    font-size: var(header--h6);
     line-height: 1.7;
 }
 
 .body-md {
-    font-size: var(--k-r---body---b16r);
+    font-size: var(body--b18);
     line-height: 1.7;
 }
 
 .body-sm {
-    font-size: var(--k-r---body---b14r);
+    font-size: var(body--b16);
     line-height: 1.7;
 }
 
 .caption {
-    font-size: var(--k-r---caption---c12r);
+    font-size: var(body--b14);
     line-height: 1.5;
 }
 
@@ -232,7 +261,7 @@ body.is-page-leaving main {
 
 .footer__copyright {
     font-family: var(--font-family-en);
-    font-size: var(--k-r---caption---c12r);
+    font-size: var(--body-b14);
     font-weight: 400;
     line-height: 1.5;
 
@@ -320,8 +349,8 @@ body.is-page-leaving main {
 /* Header Title */
 
 .sub-header__title {
-    font-size: var(--k-r---body---b14m);
-    font-weight: 600;
+    font-size: var(--body-b14);
+    --font-weight-medium: 500;
 
     color: var(--grey--950);
 
@@ -422,8 +451,8 @@ body.is-page-leaving main {
     align-items: center;
     justify-content: center;
 
-    font-size: var(--k-r---body---b18r);
-    font-weight: 400;
+    font-size: var(--body-b18);
+    font-weight: var(--font-weight-regular);
     line-height: 1;
 
     color: #fff;

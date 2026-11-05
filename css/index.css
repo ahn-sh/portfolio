@@ -184,7 +184,7 @@ body {
     padding-top: 36px;
     text-align: right;
     font-family: var(--font-family-en);
-    font-size: var(--e-n---caption---c10r);
+    font-size: var(--e-n---body---b14r);
     font-weight: 400;
     letter-spacing: .08em;
     color: var(--grey--600);
@@ -270,22 +270,10 @@ body {
 }
 
 @media (max-width: 767px) {
-  .work__info p {
-    font-size: var(--k-r---caption---c12r);
-    line-height: 1.5;
-  }
-
-  .work__info p .separator {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .work__info p span:not(.separator) {
-    display: block;
-  }
-
-  .work__info p .separator {
-    display: none;
-  }
+    .work__info p {
+        display: none;
+    }
+    .works__footer {
+        font-size: var(--e-n---caption---c10r);
+    }
 }
