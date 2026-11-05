@@ -87,4 +87,32 @@
   --content-padding-mobile: 20px;
   --header-height: 80px;
   --transition-base: .3s cubic-bezier(.4,0,.2,1);
+
+  /* Fluid typography: 360px mobile -> 1440px desktop */
+  --fluid-title-t1: clamp(48px, calc(32px + 4.4444vw), var(--title-t1));
+  --fluid-title-t2: clamp(44px, calc(32px + 3.3333vw), var(--title-t2));
+  --fluid-title-t3: clamp(40px, calc(29.333px + 2.963vw), var(--title-t3));
+  --fluid-title-t4: clamp(36px, calc(26.667px + 2.5926vw), var(--title-t4));
+  --fluid-title-t5: clamp(32px, calc(24px + 2.2222vw), var(--title-t5));
+  --fluid-header-h1: clamp(30px, calc(24px + 1.6667vw), var(--header-h1));
+  --fluid-header-h2: clamp(28px, calc(24px + 1.1111vw), var(--header-h2));
+  --fluid-header-h3: clamp(24px, calc(21.333px + .74074vw), var(--header-h3));
+  --fluid-header-h4: clamp(22px, calc(20px + .55556vw), var(--header-h4));
+  --fluid-header-h5: clamp(20px, calc(18.667px + .37037vw), var(--header-h5));
+  --fluid-header-h6: clamp(18px, calc(17.333px + .18519vw), var(--header-h6));
+  --fluid-body-b18: clamp(14px, calc(12.667px + .37037vw), var(--body-b18));
+  --fluid-body-b16: clamp(14px, calc(13.333px + .18519vw), var(--body-b16));
+  --fluid-body-b14: var(--body-b14);
+  --fluid-caption-c12: var(--caption-c12);
+  --fluid-caption-c10: var(--caption-c10);
+
+  /* Fluid spacing: use for layout rhythm, not borders or icons */
+  --space-1: clamp(8px, calc(6.667px + .37037vw), 12px);
+  --space-2: clamp(12px, calc(9.333px + .74074vw), 20px);
+  --space-3: clamp(16px, calc(10.667px + 1.48148vw), 32px);
+  --space-4: clamp(24px, calc(16px + 2.22222vw), 48px);
+  --space-5: clamp(40px, calc(26.667px + 3.7037vw), 80px);
+  --space-6: clamp(64px, calc(37.333px + 7.4074vw), 144px);
+  --space-section: clamp(85px, calc(60px + 6.9444vw), 160px);
+  --page-gutter: clamp(20px, 6vw, 100px);
 }

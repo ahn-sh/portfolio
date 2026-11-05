@@ -3,7 +3,7 @@
 }body {
     min-width: 320px;
     font-family: "Poppins", "Pretendard Variable", sans-serif;
-    font-size: var(--body-b16);
+    font-size: var(--fluid-body-b16);
     font-weight: var(--font-weight-regular);
     line-height: 1.7;
     letter-spacing: -.01em;
@@ -39,41 +39,41 @@
     );
     padding-inline: var(--content-padding-desktop);
 }.heading-display {
-    font-size: var(--title-t4);
+    font-size: var(--fluid-title-t4);
     font-weight: var(--font-weight-bold);
     line-height: 1.15;
     letter-spacing: -.03em;
 }.heading-1 {
-    font-size: var(--header-h1);
+    font-size: var(--fluid-header-h1);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.03em;
 }.heading-2 {
-    font-size: var(--header-h2);
+    font-size: var(--fluid-header-h2);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.03em;
 }.heading-3 {
-    font-size: var(--header-h3);
+    font-size: var(--fluid-header-h3);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.01em;
 }.heading-4 {
-    font-size: var(--header-h4);
+    font-size: var(--fluid-header-h4);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.01em;
 }.body-lg {
-    font-size: var(--header-h6);
+    font-size: var(--fluid-header-h6);
     line-height: 1.7;
 }.body-md {
-    font-size: var(--body-b18);
+    font-size: var(--fluid-body-b18);
     line-height: 1.7;
 }.body-sm {
-    font-size: var(--body-b16);
+    font-size: var(--fluid-body-b16);
     line-height: 1.7;
 }.caption {
-    font-size: var(--body-b14);
+    font-size: var(--fluid-body-b14);
     line-height: 1.5;
 }.image {
     display: block;
@@ -108,7 +108,7 @@
     min-height: 100px;
 }.footer__copyright {
     font-family: "Poppins", sans-serif;
-    font-size: var(--body-b14);
+    font-size: var(--fluid-body-b14);
     font-weight: var(--font-weight-regular);
     line-height: 1.5;
     color: var(--grey--700);
@@ -154,7 +154,7 @@
     border-bottom: 2px solid currentColor;
     transform: rotate(45deg);
 }.sub-header__title {
-    font-size: var(--body-b14);
+    font-size: var(--fluid-body-b14);
     font-weight: var(--font-weight-medium);
     color: var(--grey--950);
     opacity: 0;
@@ -191,7 +191,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--body-b18);
+    font-size: var(--fluid-body-b18);
     font-weight: var(--font-weight-regular);
     line-height: 1;
     color: #fff;

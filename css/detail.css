@@ -37,7 +37,7 @@ p {
     min-height: 90svh;
     display: flex;
     align-items: center;
-    padding: 120px max(7vw, 24px);
+    padding: var(--space-section) var(--page-gutter);
     box-shadow: 0 -12px 32px rgba(0, 0, 0, .025);
 }
 
@@ -57,17 +57,17 @@ p {
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 20px 30px;
-    font-size: var(--body-b16);
+    font-size: var(--fluid-body-b16);
     line-height: 1.8;
 }
 
 .meta b {
-    font-size: var(--body-b18);
+    font-size: var(--fluid-body-b18);
     font-weight: var(--font-weight-bold);
 }
 
 .intro-desc {
-    font-size: var(--body-b18);
+    font-size: var(--fluid-body-b18);
     line-height: 2;
     margin: 56px 0 40px;
 }
@@ -76,13 +76,13 @@ p {
     border: 1px solid var(--grey--950);
     display: inline-flex;
     padding: 14px 20px;
-    gap: 24px;
+    gap: var(--space-3);
     align-items: center;
-    font-size: var(--body-b16);
+    font-size: var(--fluid-body-b16);
 }
 
 .section-label {
-    font-size: var(--body-b18);
+    font-size: var(--fluid-body-b18);
     font-weight: var(--font-weight-bold);
     letter-spacing: -.01em;
 }
@@ -101,7 +101,7 @@ p {
 .overview .copy {
     max-width: 450px;
     line-height: 1.9;
-    font-size: var(--body-b14);
+    font-size: var(--fluid-body-b14);
 }
 
 .overview h2 {
@@ -121,7 +121,7 @@ p {
 
 .challenge {
     min-height: 100vh;
-    padding: 130px 7%;
+    padding: var(--space-section) var(--page-gutter);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 7%;
@@ -130,7 +130,7 @@ p {
 
 .challenge-items {
     display: grid;
-    gap: 65px;
+    gap: var(--space-5);
     padding: 64px 0 0 15%;
 }
 
@@ -142,7 +142,7 @@ p {
 }
 
 .challenge small {
-    font-size: var(--body-b16);
+    font-size: var(--fluid-body-b16);
     font-weight: var(--font-weight-medium);
     color: var(--blue);
 }
@@ -196,7 +196,7 @@ p {
 }
 
 .strength {
-    padding: 160px 7%;
+    padding: var(--space-section) var(--page-gutter);
 }
 
 .strength-grid {
@@ -215,13 +215,13 @@ p {
 }
 
 .strength .sub {
-    font-size: var(--header-h6);
+    font-size: var(--fluid-header-h6);
     font-weight: var(--font-weight-bold);
 }
 
 .strength-list {
     display: grid;
-    gap: 50px;
+    gap: var(--space-4);
     padding-top: 20px;
 }
 
@@ -237,20 +237,20 @@ p {
 }
 
 .strength .bottom-copy {
-    margin-top: 80px;
+    margin-top: var(--space-5);
     max-width: 470px;
-    font-size: var(--body-b18);
+    font-size: var(--fluid-body-b18);
     line-height: 1.9;
 }
 
 .gallery {
-    padding: 0 4% 120px;
+    padding: 0 var(--page-gutter) var(--space-5);
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: var(--space-3);
 }
 
 .gallery img {
@@ -263,7 +263,7 @@ p {
 }
 
 .content {
-    padding: 160px 7%;
+    padding: var(--space-section) var(--page-gutter);
     background: var(--grey--100);
 }
 
@@ -271,8 +271,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    gap: 30px;
-    margin-bottom: 70px;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
 }
 
 .content-head p {
@@ -284,7 +284,7 @@ p {
 .content-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 26px;
+    gap: var(--space-3);
 }
 
 .content-layout img {
@@ -302,7 +302,7 @@ p {
 }
 
 .results {
-    padding: 130px 7%;
+    padding: var(--space-section) var(--page-gutter);
     background: var(--grey--950);
     color: white;
 }
@@ -316,7 +316,7 @@ p {
 .result-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: var(--space-2);
     margin-top: 70px;
 }
 
@@ -331,13 +331,13 @@ p {
 }
 
 .result-grid p {
-    font-size: var(--body-b16);
+    font-size: var(--fluid-body-b16);
     color: var(--static---white);
     line-height: 1.8;
 }
 
 .end {
-    padding: 60px 7%;
+    padding: var(--space-5) var(--page-gutter);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -345,7 +345,7 @@ p {
 }
 
 .end a {
-    font-size: var(--body-b14);
+    font-size: var(--fluid-body-b14);
     font-weight: var(--font-weight-bold);
 }
 
@@ -374,7 +374,7 @@ p {
     display: grid;
     place-items: center;
     box-shadow: 0 4px 20px #0001;
-    font-size: var(--header-h6);
+    font-size: var(--fluid-header-h6);
     color: var(--semantic---blue--500);
     transform: translateY(16px);
 }
@@ -391,7 +391,7 @@ p {
     min-width: 160px;
     text-align: center;
     padding: 14px 20px;
-    font-size: var(--body-b16);
+    font-size: var(--fluid-body-b16);
     font-weight: var(--font-weight-medium);
     box-shadow: 0 6px 30px #0002;
 }
@@ -412,7 +412,7 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: var(--body-b14);
+    font-size: var(--fluid-body-b14);
     color: var(--grey--600);
     pointer-events: none;
     white-space: nowrap;
@@ -476,7 +476,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: var(--space-1);
     color: var(--static---white);
     text-decoration: none;
     text-shadow: 0 1px 10px rgba(0, 0, 0, .35);
@@ -546,7 +546,7 @@ body.has-left-hero .top {
 
 @media (max-width: 767px) {
     .intro {
-        padding: 95px 6%;
+        padding: var(--space-section) var(--page-gutter);
         min-height: 75vh;
     }
 
@@ -555,7 +555,6 @@ body.has-left-hero .top {
     }
 
     .intro-desc {
-        font-size: var(--body-b14);
     }
 
     .meta {
@@ -564,11 +563,11 @@ body.has-left-hero .top {
     }
 
     .meta b {
-        font-size: var(--body-b16);
+        font-size: var(--fluid-body-b16);
     }
 
     .meta span {
-        font-size: var(--body-b14);
+        font-size: var(--fluid-body-b14);
     }
 
     .overview {
@@ -578,13 +577,13 @@ body.has-left-hero .top {
 
     .challenge {
         grid-template-columns: 1fr;
-        padding: 85px 6%;
-        gap: 35px;
+        padding: var(--space-section) var(--page-gutter);
+        gap: var(--space-3);
     }
 
     .challenge-items {
         padding: 0;
-        gap: 42px;
+        gap: var(--space-4);
     }
 
     .challenge .media-placeholder {
@@ -600,28 +599,28 @@ body.has-left-hero .top {
     }
 
     .strength {
-        padding: 90px 6%;
+        padding: var(--space-section) var(--page-gutter);
     }
 
     .strength-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: var(--space-4);
     }
 
     .strength-list {
-        gap: 30px;
+        gap: var(--space-3);
     }
 
     .strength .bottom-copy {
-        margin-top: 50px;
+        margin-top: var(--space-5);
     }
 
     .gallery {
-        padding: 0 6% 80px;
+        padding: 0 var(--page-gutter) var(--space-5);
     }
 
     .gallery-grid {
-        gap: 12px;
+        gap: var(--space-1);
     }
 
     .gallery img {
@@ -633,7 +632,7 @@ body.has-left-hero .top {
     }
 
     .content {
-        padding: 85px 6%;
+        padding: var(--space-section) var(--page-gutter);
     }
 
     .content-head {
@@ -642,11 +641,10 @@ body.has-left-hero .top {
 
     .content-head p {
         max-width: none;
-        font-size: var(--body-b14);
     }
 
     .content-layout {
-        gap: 12px;
+        gap: var(--space-1);
     }
 
     .content-layout img:nth-child(2) {
@@ -654,7 +652,7 @@ body.has-left-hero .top {
     }
 
     .results {
-        padding: 90px 6%;
+        padding: var(--space-section) var(--page-gutter);
     }
 
     .result-grid {
@@ -664,7 +662,7 @@ body.has-left-hero .top {
     }
 
     .end {
-        padding: 30px 6%;
+        padding: var(--space-4) var(--page-gutter);
     }
 
     .floating {
@@ -672,15 +670,15 @@ body.has-left-hero .top {
     }
 
     .top {
-        right: 12px;
-        bottom: 18px;
+        right: 16px;
+        bottom: 20px;
         width: 48px;
         height: 48px;
     }
 
     .section-label,
     .scroll-cue {
-        font-size: var(--body-b14);
+        font-size: var(--fluid-body-b14);
     }
 
     .intro-desc,
@@ -688,7 +686,7 @@ body.has-left-hero .top {
     .strength-list p,
     .content-head p,
     .results p {
-        font-size: var(--body-b14);
+        font-size: var(--fluid-body-b14);
     }
 
     .gallery-grid>.media-wrap:nth-child(3) img {
