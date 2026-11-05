@@ -461,7 +461,7 @@ p {
     position: absolute;
     inset: 0;
     background: url(../images/project-01.png) center / cover no-repeat;
-    opacity: 1;
+    opacity: .55;
     transform: translate3d(0, var(--hero-shift, 0px), 0) scale(1.06);
     will-change: transform;
 }
