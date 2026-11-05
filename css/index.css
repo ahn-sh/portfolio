@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: 'Poppins', 'Pretendard Variable', sans-serif;
     background: var(--grey--950);
     color: var(--static---white);
 }
@@ -19,8 +20,7 @@ body {
     justify-content: space-between;
     gap: 12px;
     margin-bottom: 22px;
-    font-family: var(--font-family-en);
-    font-size: var(--e-n---body---b16r);
+    font-size: var(--body-b16);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: .1em;
@@ -38,17 +38,15 @@ body {
 .works__eyebrow {
     margin-bottom: 22px;
     color: var(--grey--500);
-    font-family: var(--font-family-en);
-    font-size: var(--e-n---caption---c12m);
+    font-size: var(--caption-c12);
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: .16em;
 }
 
 .works__intro h1 {
-    font-family: var(--font-family-en);
-    font-size: clamp(var(--e-n---title---t4), 10.5vw, 180px);
-    font-weight: 600;
+    font-size: clamp(var(--title-t4), 10.5vw, 180px);
+    font-weight: 900;
     line-height: .89;
     letter-spacing: -.075em;
 }
@@ -60,7 +58,7 @@ body {
 
 .works__description {
     margin-top: 30px;
-    font-size: clamp(var(--k-r---body---b14r), 1.1vw, var(--k-r---body---b18r));
+    font-size: clamp(var(--body-b14), 1.1vw, var(--body-b18));
     line-height: 1.7;
     color: var(--grey--500);
     word-break: keep-all;
@@ -75,7 +73,7 @@ body {
     padding: 16px 20px;
     border: 1px solid var(--grey--600);
     color: var(--static---white);
-    font-size: var(--k-r---body---b14m);
+    font-size: var(--body-b14);
     font-weight: 600;
     white-space: nowrap;
     transition: background .25s, color .25s, border-color .25s;
@@ -89,7 +87,7 @@ body {
 }
 
 .resume-button__icon {
-    font-size: var(--k-r---header---h5);
+    font-size: var(--header-h5);
     font-weight: 400;
     line-height: 1;
 }
@@ -132,8 +130,7 @@ body {
 }
 
 .work__index {
-    font-family: var(--font-family-en);
-    font-size: var(--e-n---body---b16b);
+    font-size: var(--body-b16);
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: .1em;
@@ -145,7 +142,7 @@ body {
 }
 
 .work__info h2 {
-    font-size: clamp(var(--k-r---body---b18m), 1.6vw, var(--k-r---header---h4));
+    font-size: clamp(var(--body-b18), 1.6vw, var(--header-h4));
     font-weight: 600;
     line-height: 1.3;
     word-break: keep-all;
@@ -153,7 +150,7 @@ body {
 
 .work__info p {
     margin-top: 8px;
-    font-size: clamp(var(--k-r---caption---c12r), .9vw, var(--k-r---body---b16r));
+    font-size: clamp(var(--caption-c12), .9vw, var(--body-b16));
     line-height: 1.5;
     color: var(--grey--300);
 }
@@ -162,7 +159,7 @@ body {
     position: absolute;
     right: 20px;
     bottom: 18px;
-    font-size: var(--e-n---header---h5);
+    font-size: var(--header-h5);
 }
 
 .work:hover>img,
@@ -183,8 +180,7 @@ body {
 .works__footer {
     padding-top: 36px;
     text-align: right;
-    font-family: var(--font-family-en);
-    font-size: var(--e-n---body---b14r);
+    font-size: var(--body-b14);
     font-weight: 400;
     letter-spacing: .08em;
     color: var(--grey--600);
@@ -236,17 +232,17 @@ body {
     }
 
     .work__info h2 {
-        font-size: var(--k-r---body---b16m);
+        font-size: var(--body-b16);
     }
 
     .work__info p {
-        font-size: var(--k-r---caption---c12r);
+        font-size: var(--caption-c12);
     }
 
     .work__arrow {
         right: 12px;
         bottom: 10px;
-        font-size: var(--e-n---body---b18r);
+        font-size: var(--body-b18);
     }
 }
 

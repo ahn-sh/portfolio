@@ -18,7 +18,7 @@ body {
     margin: 0;
     color: var(--grey--950);
     background: var(--static---white);
-    font-family: 'PortfolioFont', sans-serif;
+    font-family: 'Poppins', 'Pretendard Variable', sans-serif;
     font-weight: var(--font-weight-regular);
     word-break: keep-all;
     overflow-wrap: break-word
@@ -27,6 +27,10 @@ body {
 a {
     text-decoration: none;
     color: inherit
+}
+
+p {
+    font-size: var(--body-b18);
 }
 
 button {
@@ -142,26 +146,26 @@ header a {
     font-size: clamp(32px, 3.2vw, 54px);
     font-weight: var(--font-weight-bold);
     letter-spacing: -.06em;
-    margin: 0 0 40px
+    margin: 0 0 56px
 }
 
 .meta {
     display: grid;
-    grid-template-columns: 95px 1fr;
-    gap: 18px 26px;
+    grid-template-columns: 120px 1fr;
+    gap: 20px 30px;
     font-size: var(--body-b16);
     line-height: 1.8
 }
 
 .meta b {
-    font-size: var(--body-b16);
+    font-size: var(--body-b18);
     font-weight: var(--font-weight-bold);
 }
 
 .intro-desc {
-    font-size: var(--body-b14);
+    font-size: var(--body-b18);
     line-height: 2;
-    margin: 36px 0 30px
+    margin: 56px 0 40px
 }
 
 .outline-btn {
@@ -170,11 +174,11 @@ header a {
     padding: 14px 20px;
     gap: 24px;
     align-items: center;
-    font-size: var(--body-b14)
+    font-size: var(--body-b16)
 }
 
 .section-label {
-    font-size: var(--body-b14);
+    font-size: var(--body-b18);
     font-weight: var(--font-weight-bold);
     letter-spacing: -.01em
 }
@@ -228,16 +232,18 @@ header a {
 
 .challenge h3 {
     font-size: clamp(22px, 2vw, 32px);
+    font-weight: var(--font-weight-medium);
     margin: 0 0 12px;
     letter-spacing: -.04em
 }
 
 .challenge small {
-    font-size: var(--body-b16)
+    font-size: var(--body-b16);
+    font-weight: var(--font-weight-medium);
+    color: var(--blue);
 }
 
 .challenge p {
-    font-size: var(--body-b14);
     color: var(--grey--700);
     line-height: 1.85;
     max-width: 390px;
@@ -310,7 +316,7 @@ header a {
 }
 
 .strength .sub {
-    font-size: var(--body-b14);
+    font-size: var(--header-h6);
     font-weight: var(--font-weight-bold);
 }
 
@@ -321,20 +327,20 @@ header a {
 }
 
 .strength-list h3 {
-    font-size: var(--header-h4);
+    font-size: var(--header-h3);
+    font-weight: var(--font-weight-medium);
     margin: 0 0 12px
 }
 
 .strength-list p {
     line-height: 1.9;
     color: var(--grey--700);
-    font-size: var(--body-b14)
 }
 
 .strength .bottom-copy {
     margin-top: 80px;
     max-width: 470px;
-    font-size: var(--body-b16);
+    font-size: var(--body-b18);
     line-height: 1.9
 }
 
@@ -417,7 +423,7 @@ header a {
 
 .result-grid article {
     padding: 35px 10px;
-    border-top: 1px solid #5d6673
+    border-top: 1px solid var(--grey--800)
 }
 
 .result-grid strong {
@@ -426,8 +432,8 @@ header a {
 }
 
 .result-grid p {
-    font-size: var(--body-b14);
-    color: var(--grey--500);
+    font-size: var(--body-b16);
+    color: var(--static---white);
     line-height: 1.8
 }
 
@@ -770,7 +776,7 @@ body {
     align-items: center;
     gap: 12px;
     color: var(--static---white);
-    
+
     text-decoration: none;
     text-shadow: 0 1px 10px rgba(0, 0, 0, .35);
     transition: opacity .15s linear;

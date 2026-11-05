@@ -2,41 +2,11 @@
    Font Import
 ======================================== */
 
-/* English - Poppins */
-@font-face {
-    font-family: 'PortfolioFont';
-    src: url('/fonts/Poppins-Regular.woff2') format('woff2');
-    font-weight: 400;
-    unicode-range: U+0000-007F;
-}
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-@font-face {
-    font-family: 'PortfolioFont';
-    src: url('/fonts/Poppins-Medium.woff2') format('woff2');
-    font-weight: 500;
-    unicode-range: U+0000-007F;
-}
-
-@font-face {
-    font-family: 'PortfolioFont';
-    src: url('/fonts/Poppins-Bold.woff2') format('woff2');
-    font-weight: 700;
-    unicode-range: U+0000-007F;
-}
-
-/* Korean - Pretendard */
-@font-face {
-    font-family: 'PortfolioFont';
-    src: url('/fonts/PretendardVariable.woff2') format('woff2');
-    font-weight: 100 900;
-    unicode-range:
-        U+AC00-D7A3,
-        U+1100-11FF,
-        U+3130-318F,
-        U+A960-A97F,
-        U+D7B0-D7FF;
-}
-
+/* Pretendard */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
 
 
 /* ========================================
