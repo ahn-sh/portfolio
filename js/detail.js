@@ -87,3 +87,79 @@
     scrollToTop(event);
   });
 })();
+
+
+// Project Challenge: desktop scroll-driven sticky sequence, mobile click-driven.
+(() => {
+  const section = document.querySelector('.challenge--toss');
+  if (!section) return;
+  const items = [...section.querySelectorAll('[data-challenge]')];
+  const scenes = [...section.querySelectorAll('[data-scene]')];
+  const mobile = window.matchMedia('(max-width: 767px)');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let current = -1;
+  let frame = 0;
+  function activate(index) {
+    if (index === current) return;
+    current = index;
+    items.forEach((item, i) => {
+      const on = i === index;
+      item.classList.toggle('is-active', on);
+      item.setAttribute('aria-selected', String(on));
+    });
+    scenes.forEach((scene, i) => scene.classList.toggle('is-active', i === index));
+  }
+  function sync() {
+    frame = 0;
+    if (mobile.matches) return;
+    const rect = section.getBoundingClientRect();
+    const travel = Math.max(1, section.offsetHeight - window.innerHeight);
+    const progress = Math.min(.999, Math.max(0, -rect.top / travel));
+    activate(Math.min(2, Math.floor(progress * 3)));
+  }
+  function requestSync() {
+    if (frame) return;
+    frame = requestAnimationFrame(sync);
+  }
+  items.forEach((item, index) => item.addEventListener('click', () => {
+    activate(index);
+    if (mobile.matches) return;
+    const top = section.getBoundingClientRect().top + window.scrollY;
+    const travel = Math.max(1, section.offsetHeight - window.innerHeight);
+    const target = top + travel * ((index + .5) / 3);
+    window.scrollTo({top: target, behavior: reduced.matches ? 'instant' : 'smooth'});
+  }));
+  window.addEventListener('scroll', requestSync, {passive:true});
+  window.addEventListener('resize', () => { if (mobile.matches) activate(0); else sync(); });
+  activate(0);
+  sync();
+})();
+
+// Project Goal: hover/focus activates the corresponding card and heading keyword.
+document.addEventListener('DOMContentLoaded', () => {
+  const section = document.querySelector('.project-goal');
+  if (!section) return;
+  const cards = [...section.querySelectorAll('[data-goal-card]')];
+  const labels = [...section.querySelectorAll('[data-goal-label]')];
+  const activate = (index) => {
+    cards.forEach((card, i) => card.classList.toggle('is-active', i === index));
+    labels.forEach((label, i) => label.classList.toggle('is-active', i === index));
+  };
+  const reset = () => activate(-1);
+  cards.forEach((card, index) => {
+    card.addEventListener('pointerenter', (event) => { if (event.pointerType === 'mouse' || event.pointerType === 'pen') activate(index); });
+    card.addEventListener('pointerleave', reset);
+    card.addEventListener('focusin', () => activate(index));
+    card.addEventListener('focusout', (event) => { if (!card.contains(event.relatedTarget)) reset(); });
+    card.addEventListener('click', () => activate(index));
+  });
+  if (window.matchMedia('(hover: none)').matches && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio);
+      if (visible.length) activate(Number(visible[0].target.dataset.goalCard));
+    }, { threshold:[0.35,0.6,0.85] });
+    cards.forEach(card => observer.observe(card));
+  }
+});
+
+
