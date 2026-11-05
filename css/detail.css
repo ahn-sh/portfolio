@@ -94,7 +94,7 @@ p {
     position: relative;
     display: flex;
     align-items: flex-start;
-    padding: 13vh 8%;
+    padding: var(--space-section) var(--page-gutter);
 }
 
 .overview .copy {
