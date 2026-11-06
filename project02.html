@@ -16,21 +16,34 @@
     <!-- <header></header> -->
     <main>
         <section aria-label="프로젝트 메인 배너" class="hero" id="top">
+
+            <!-- 배경 영상 -->
+            <video class="hero__video" autoplay muted loop playsinline preload="metadata">
+                <source src="../images/project02/hero.mp4" type="video/mp4">
+            </video>
+
+            <!-- 기존 스크롤 버튼 -->
             <a aria-label="프로젝트 소개로 이동" class="scroll-cue" href="#project-intro">
+
                 <span class="scroll-cue__text">SCROLL DOWN</span>
-                <svg aria-hidden="true" class="scroll-cue__arrow" fill="none" height="32" viewbox="0 0 24 32"
+
+                <svg aria-hidden="true" class="scroll-cue__arrow" fill="none" height="32" viewBox="0 0 24 32"
                     width="24">
                     <path d="M12 2V28M3 19L12 28L21 19" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="1.7"></path>
+                        stroke-linejoin="round" stroke-width="1.7">
+                    </path>
                 </svg>
             </a>
+
         </section>
         <section class="intro" id="project-intro">
             <div class="intro-content reveal">
                 <h2>한국핀테크산업협회 홈페이지 구축 · 리뉴얼</h2>
-                <div class="meta"><b>KEYWORD</b><span>#홈페이지리뉴얼 #협회홈페이지 #정보구조설계 #회원사관리 #회원가입 #회비관리 #회원사현황 #콘텐츠관리 #사용자중심설계 #반응형웹
+                <div class="meta"><b>KEYWORD</b><span>#홈페이지리뉴얼 #협회홈페이지 #정보구조설계 #회원사관리 #회원가입 #회비관리 #회원사현황 #콘텐츠관리 #사용자중심설계
+                        #반응형웹
                         웹</span><b>CLIENT</b><span>한국핀테크산업협회</span><b>ROLE</b><span>서비스 기획 · UI/UX 설계</span></div>
-                <p class="intro-desc">한국핀테크산업협회의 다양한 정보와 회원사 서비스를 보다 쉽고 편리하게 이용할 수 있도록 홈페이지를 구축·리뉴얼한 프로젝트입니다. 협회 정보의 탐색 구조를 정리하고, 회원가입부터 회비 납부와 회원사 관리까지 이어지는 이용 과정을 사용자 관점에서 설계했습니다.
+                <p class="intro-desc">한국핀테크산업협회의 다양한 정보와 회원사 서비스를 보다 쉽고 편리하게 이용할 수 있도록 홈페이지를 구축·리뉴얼한 프로젝트입니다. 협회 정보의 탐색
+                    구조를 정리하고, 회원가입부터 회비 납부와 회원사 관리까지 이어지는 이용 과정을 사용자 관점에서 설계했습니다.
                 </p>
                 <a class="outline-btn" href="#overview">사이트 바로가기
                     <span>→</span></a>
@@ -97,8 +110,10 @@
             <p class="bottom-copy reveal">다양한 협회 정보와 복잡한 회원사 이용 절차, 분산된 운영 업무를 하나의 편리한 서비스 경험으로 연결하는 것이 핵심 과제였습니다.</p>
         </section>
         <section aria-label="연결된 교육 경험" class="marquee">
-            <div class="marquee-line"><span>Shaping the Future of Fintech</span><span>Shaping the Future of Fintech</span></div>
-            <div class="marquee-line"><span>Empowering Financial Innovation</span><span>Empowering Financial Innovation</span></div>
+            <div class="marquee-line"><span>Shaping the Future of Fintech</span><span>Shaping the Future of
+                    Fintech</span></div>
+            <div class="marquee-line"><span>Empowering Financial Innovation</span><span>Empowering Financial
+                    Innovation</span></div>
         </section>
         <!-- =========================================================
              PROJECT GOAL | 정적 이미지 카드 3개
@@ -113,21 +128,24 @@
             <div class="project-goal__grid">
                 <!-- 01 | 통합 관리 -->
                 <article class="project-goal__card reveal">
-                    <div class="project-goal__image"><img src="./images/goal-01.png" alt="학생·프로그램·교육바우처 통합 관리 이미지" loading="lazy" decoding="async" /></div>
+                    <div class="project-goal__image"><img src="./images/goal-01.png" alt="학생·프로그램·교육바우처 통합 관리 이미지"
+                            loading="lazy" decoding="async" /></div>
                     <span class="project-goal__number">01 / ACCESSIBILITY</span>
                     <h3>필요한 정보를<br> 더 쉽고 빠르게</h3>
                     <p>다양한 협회 정보를 직관적으로 탐색할 수 있는 환경</p>
                 </article>
                 <!-- 02 | 바우처 관리 -->
                 <article class="project-goal__card reveal">
-                    <div class="project-goal__image"><img src="./images/goal-02.png" alt="교육바우처 지급과 사용 관리 이미지" loading="lazy" decoding="async" /></div>
+                    <div class="project-goal__image"><img src="./images/goal-02.png" alt="교육바우처 지급과 사용 관리 이미지"
+                            loading="lazy" decoding="async" /></div>
                     <span class="project-goal__number">02 / CONVENIENCE</span>
                     <h3>회원사 이용 과정을<br> 더 간편하게</h3>
                     <p>가입부터 회비 납부까지 부담을 줄인 편리한 이용 경험</p>
                 </article>
                 <!-- 03 | 사용자 중심 -->
                 <article class="project-goal__card reveal">
-                    <div class="project-goal__image"><img src="./images/goal-03.png" alt="학교 실무자와 학부모 사용자별 서비스 이미지" loading="lazy" decoding="async" /></div>
+                    <div class="project-goal__image"><img src="./images/goal-03.png" alt="학교 실무자와 학부모 사용자별 서비스 이미지"
+                            loading="lazy" decoding="async" /></div>
                     <span class="project-goal__number">03 / EFFICIENCY</span>
                     <h3>반복 업무를 줄이고<br> 운영은 효율적으로</h3>
                     <p>회원사와 협회 정보를 체계적으로 관리할 수 있는 운영 환경</p>
@@ -147,7 +165,8 @@
             <div class="solution-grid">
                 <!-- 01 | 정보 탐색 -->
                 <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-01.png" alt="수강신청 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__media"><img src="./images/solution-01.png" alt="수강신청 화면 디자인"
+                            loading="lazy" decoding="async"></div>
                     <div class="solution-card__copy">
                         <span class="solution-card__category">정보 탐색</span>
                         <h3>다양한 협회 정보를,<br>직관적인 탐색 구조로</h3>
@@ -156,7 +175,8 @@
                 </article>
                 <!-- 02 | 회원사 서비스 -->
                 <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-02.png" alt="교육바우처 적용 및 납부 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__media"><img src="./images/solution-02.png" alt="교육바우처 적용 및 납부 화면 디자인"
+                            loading="lazy" decoding="async"></div>
                     <div class="solution-card__copy">
                         <span class="solution-card__category">회원사 서비스</span>
                         <h3>회원가입부터 정보 관리까지,,<br>하나의 자연스러운 흐름으로</h3>
@@ -165,7 +185,8 @@
                 </article>
                 <!-- 03 | 회비 납부 -->
                 <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-03.png" alt="학생과 프로그램을 통합 관리하는 운영 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__media"><img src="./images/solution-03.png"
+                            alt="학생과 프로그램을 통합 관리하는 운영 화면 디자인" loading="lazy" decoding="async"></div>
                     <div class="solution-card__copy">
                         <span class="solution-card__category">회비 납부</span>
                         <h3>복잡한 회비 정보를,,<br>한눈에 이해할 수 있도록</h3>
@@ -174,7 +195,8 @@
                 </article>
                 <!-- 04 | 운영 관리 -->
                 <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-04.png" alt="학교 실무자와 학부모별 사용자 경험 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__media"><img src="./images/solution-04.png"
+                            alt="학교 실무자와 학부모별 사용자 경험 화면 디자인" loading="lazy" decoding="async"></div>
                     <div class="solution-card__copy">
                         <span class="solution-card__category">운영 관리</span>
                         <h3>분산된 운영 업무를,<br>체계적인 관리 화면으로</h3>
@@ -186,7 +208,8 @@
         <section class="results">
             <div class="section-label reveal">Project Outcome</div>
             <h2 class="reveal">Clearer Information.<br />Stronger Connections.</h2>
-            <p class="reveal">협회 정보와 회원사 서비스를 하나의 홈페이지에서 유기적으로 연결하고, 정보 접근성과 회원사 이용 편의성, 협회 운영 효율성을 고려한 서비스 경험을 설계했습니다.</p>
+            <p class="reveal">협회 정보와 회원사 서비스를 하나의 홈페이지에서 유기적으로 연결하고, 정보 접근성과 회원사 이용 편의성, 협회 운영 효율성을 고려한 서비스 경험을 설계했습니다.
+            </p>
             <div class="result-grid">
                 <article class="reveal"><strong>01</strong>
                     <p>직관적인 정보 탐색</p>
