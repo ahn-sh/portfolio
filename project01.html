@@ -1,264 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
     <title>방과후드림</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/detail.css">
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/variables.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/detail.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- <header><strong>방과후드림</strong><a href="./index.html">ALL WORKS ↗</a></header> -->
     <main>
-        <section class="hero" id="top" aria-label="프로젝트 메인 배너">
-            <a class="scroll-cue" href="#project-intro" aria-label="프로젝트 소개로 이동">
+        <section aria-label="프로젝트 메인 배너" class="hero" id="top">
+            <a aria-label="프로젝트 소개로 이동" class="scroll-cue" href="#project-intro">
                 <span class="scroll-cue__text">SCROLL DOWN</span>
-                <svg class="scroll-cue__arrow" viewBox="0 0 24 32" width="24" height="32" fill="none"
-                    aria-hidden="true">
-                    <path d="M12 2V28M3 19L12 28L21 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                <svg aria-hidden="true" class="scroll-cue__arrow" fill="none" height="32" viewbox="0 0 24 32"
+                    width="24">
+                    <path d="M12 2V28M3 19L12 28L21 19" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.7"></path>
                 </svg>
             </a>
         </section>
         <section class="intro" id="project-intro">
             <div class="intro-content reveal">
-                <h2>방과후드림 교육 플랫폼 구축</h2>
-                <div class="meta"><b>KEYWORD</b><span>#교육 플랫폼 #방과후 교육 #통합 관리 시스템 #학부모 포털 #학교 관리자 시스템 #운영 관리자 시스템 #수강신청
-                        #선착순 신청 #추첨 신청 #대기신청 #프로그램 관리 #학생 관리 #기수 관리 #간편결제 #자동결제 #결제 연동 #이용권 관리 #포인트 연동 #납부 관리 #API 연동
-                        #외부 시스템 연계 #업무 프로세스 개선 #사용자 중심 설계 #UI/UX #반응형 웹 #웹 서비스 구축
+                <h2>방과후드림 통합 관리 플랫폼 구축</h2>
+                <div class="meta"><b>KEYWORD</b><span>#방과후 교육 #교육바우처 #업무 디지털화 #통합 관리 #업무 효율화 #프로그램 관리 #학생 관리 #수강신청 #이용권
+                        관리 #사용자 중심 설계 #UI/UX #반응형 웹
                         웹</span><b>CLIENT</b><span>교육부</span><b>ROLE</b><span>서비스 기획 · UI/UX 설계</span></div>
-                <p class="intro-desc">방과후드림은 학생과 학부모, 학교 운영 담당자를 연결하여 방과후 교육 서비스를 보다 편리하고 효율적으로 이용할 수 있도록 기획한 통합 교육
-                    플랫폼입니다. 수강신청부터 프로그램 관리, 결제 및 이용권 사용까지 이어지는 복잡한 과정을 사용자 관점에서 재정리하고, 각 이용자의 목적과 업무 흐름에 맞춰 직관적이고 일관된
-                    서비스 경험을 제공할 수 있도록 설계했습니다.</p><a class="outline-btn" href="#overview">사이트 바로가기
+                <p class="intro-desc">방과후드림은 엑셀과 수기 방식으로 이루어지던 방과후 교육 운영 및 교육바우처 관리 업무를 디지털화하여, 학교 실무자의 업무 효율성을 높이기 위해
+                    구축한 통합 관리 플랫폼입니다.
+
+                    학생 및 프로그램 관리부터 교육바우처 지급·사용, 수강신청과 결제까지 이어지는 업무 과정을 하나의 서비스로 통합하고, 실무자의 운영 편의성과 학부모의 이용 경험을 함께 고려한
+                    직관적인 UI/UX를 설계했습니다.
+                </p>
+                <a class="outline-btn" href="#overview">사이트 바로가기
                     <span>→</span></a>
             </div>
         </section>
         <section class="overview" id="overview">
             <div class="copy reveal">
-                <div class="section-label">Project Overview</div>
-                <h2>교육 운영을<br>하나로 연결하다.</h2>
-                <p>학교마다 달랐던 방과후 프로그램 운영 과정을 통합하고, 학부모에게는 간편한 수강신청 경험을, 담당자에게는 효율적인 관리 환경을 제공하는 것을 목표로 했습니다.</p>
+                <div class="section-label">Project Background</div>
+                <h2>수작업으로 이루어지던<br />방과후 교육 운영, 이제는 하나로.</h2>
+                <p>기존 방과후 교육 운영은 학교마다 엑셀과 수기 방식으로 이루어져, 학생과 프로그램 관리부터 교육바우처 사용까지 여러 업무를 개별적으로 처리해야 했습니다.
+                    <br />이러한 운영 환경을 개선하고, 학교 실무자가 보다 쉽고 효율적으로 업무를 관리할 수 있는 통합 시스템이 필요했습니다.
+                </p>
             </div><span class="image-label">BACKGROUND IMAGE AREA · 100VH</span>
         </section>
-        <section class="challenge-editorial" id="project-challenge" aria-labelledby="challenge-editorial-heading">
+        <section aria-labelledby="challenge-editorial-heading" class="challenge-editorial" id="project-challenge">
             <div class="section-label reveal">Project Challenge</div>
-            <h2 class="challenge-editorial__heading reveal" id="challenge-editorial-heading">복잡한 과정을<br>더 단순하게.</h2>
+            <h2 class="challenge-editorial__heading reveal" id="challenge-editorial-heading">복잡한 과정을<br />더 단순하게.</h2>
             <div class="challenge-editorial__list">
                 <article class="goal-story reveal">
                     <div class="goal-story__intro"><span class="goal-story__number">01</span>
-                        <h3>서로 다른 신청 방식,<br>어떻게 안내할까?</h3>
+                        <h3>흩어진 관리 업무,<br />어떻게 하나로 연결할까?</h3>
                     </div>
                     <div class="goal-story__body">
                         <div class="goal-story__text">
-                            <h4>신청 방식마다 달라지는 절차</h4>
-                            <p>선착순·추첨·대기신청은 진행 방식과 결과 확인 시점이 달라요.<br>학부모가 각 방식의 차이와 현재 상태를 혼동하지 않도록 정보 구조를 정리해야 했습니다.
+                            <h4>엑셀과 수기로 분산된 업무 환경</h4>
+                            <p>학생·프로그램·교육바우처 관리가 개별적으로 이루어져 반복적인 수작업이 발생했습니다.<br>이를 개선하기 위한 통합 관리 체계가 필요했습니다.
                             </p>
                         </div>
-                        <div class="goal-story__visual challenge-problem-visual">
-                            <div class="challenge-problem challenge-problem--paths">
-                                <div class="problem-kicker">APPLICATION TYPES</div>
-                                <div class="problem-title">신청 방식별로 다른 진행 단계</div>
-                                <div class="problem-lanes">
-                                    <div class="problem-lane"><span class="problem-dot">01</span><strong>선착순</strong>
-                                        <div class="problem-line"></div><em>즉시 확정</em>
-                                    </div>
-                                    <div class="problem-lane"><span class="problem-dot">02</span><strong>추첨</strong>
-                                        <div class="problem-line"></div><em>결과 발표</em>
-                                    </div>
-                                    <div class="problem-lane"><span class="problem-dot">03</span><strong>대기신청</strong>
-                                        <div class="problem-line"></div><em>순번 · 승급</em>
-                                    </div>
-                                </div>
-                                <div class="problem-note"><span>!</span> 신청 방식에 따라 달라지는 상태와 안내 시점</div>
-                            </div>
-                        </div>
+                        <div class="goal-story__visual challenge-image-frame"><img
+                                alt="엑셀·수기·교육바우처로 분산된 업무 환경을 표현한 시각 이미지" class="challenge-image" decoding="async"
+                                loading="lazy" src="./images/challenge-01.png" /></div>
                     </div>
                 </article>
                 <article class="goal-story reveal">
                     <div class="goal-story__intro"><span class="goal-story__number">02</span>
-                        <h3>이용권과 수강료,<br>어떻게 연결할까?</h3>
+                        <h3>복잡한 교육바우처,<br />어떻게 쉽게 관리할까?</h3>
                     </div>
                     <div class="goal-story__body">
                         <div class="goal-story__text">
-                            <h4>분리되어 보이는 납부 정보</h4>
-                            <p>프로그램 수강료와 이용권 잔액, 실제 납부금액은 서로 연관되어 있어요.<br>사용자가 어떤 금액을 확인하고 납부해야 하는지 명확히 이해하도록 설계하는 것이
-                                과제였습니다.</p>
+                            <h4>지급부터 사용까지 이어지는 관리 과정</h4>
+                            <p>교육바우처의 지급·회수·사용 내역 등 복잡한 관리 절차를 실무자가 쉽고 정확하게 처리할 수 있도록 개선이 필요했습니다.
+                            </p>
                         </div>
-                        <div class="goal-story__visual challenge-problem-visual">
-                            <div class="challenge-problem challenge-problem--money">
-                                <div class="problem-kicker">PAYMENT INFORMATION</div>
-                                <div class="problem-title">각기 다른 곳에 있는 납부 정보</div>
-                                <div class="problem-money-grid">
-                                    <div><small>프로그램 수강료</small><strong>50,000원</strong></div>
-                                    <div><small>이용권 잔액</small><strong>30,000원</strong></div>
-                                    <div><small>납부 상태</small><strong>확인 필요</strong></div>
-                                </div>
-                                <div class="problem-connector"><i></i><i></i><i></i></div>
-                                <div class="problem-question">실제로 얼마를 납부해야 할까요?</div>
-                                <div class="problem-note"><span>!</span> 금액 간 관계를 사용자가 직접 이해해야 하는 부담</div>
-                            </div>
-                        </div>
+                        <div class="goal-story__visual challenge-image-frame"><img
+                                alt="교육바우처 지급·사용·잔액 확인·회수의 관리 과정을 표현한 시각 이미지" class="challenge-image" decoding="async"
+                                loading="lazy" src="./images/challenge-02.png" /></div>
                     </div>
                 </article>
                 <article class="goal-story reveal">
                     <div class="goal-story__intro"><span class="goal-story__number">03</span>
-                        <h3>흩어진 운영 정보,<br>어떻게 관리할까?</h3>
+                        <h3>서로 다른 사용자,<br />어떻게 편리하게 연결할까?</h3>
                     </div>
                     <div class="goal-story__body">
                         <div class="goal-story__text">
-                            <h4>여러 단계에 걸친 운영 업무</h4>
-                            <p>학생·프로그램·신청·확정·납부 정보는 각각 연결되어 있지만 관리 관점은 달라요.<br>운영자가 필요한 상태를 놓치지 않고 확인할 수 있도록 업무 흐름과 정보
-                                우선순위를 정리해야 했습니다.</p>
+                            <h4>사용자에 따라 달라지는 이용 목적</h4>
+                            <p>실무자의 효율적인 업무 관리와 학부모의 간편한 신청·결제를 위해 사용자별 목적에 맞는 서비스 설계가 필요했습니다.</p>
                         </div>
-                        <div class="goal-story__visual challenge-problem-visual">
-                            <div class="challenge-problem challenge-problem--ops">
-                                <div class="problem-kicker">OPERATION WORKFLOW</div>
-                                <div class="problem-title">여러 정보에 걸쳐 있는 운영 업무</div>
-                                <div class="problem-ops-grid">
-                                    <div><span>01</span><strong>학생 정보</strong><small>대상자 확인</small></div>
-                                    <div><span>02</span><strong>프로그램</strong><small>운영 일정</small></div>
-                                    <div><span>03</span><strong>신청 현황</strong><small>접수 · 대기</small></div>
-                                    <div><span>04</span><strong>확정 관리</strong><small>선정 · 취소</small></div>
-                                    <div><span>05</span><strong>납부 현황</strong><small>예정 · 완료</small></div>
-                                    <div><span>06</span><strong>운영 상태</strong><small>진행 · 마감</small></div>
-                                </div>
-                                <div class="problem-note"><span>!</span> 정보 간 연결 관계와 관리 우선순위 정리가 필요</div>
-                            </div>
-                        </div>
+                        <div class="goal-story__visual challenge-image-frame"><img
+                                alt="학교 실무자와 학부모의 서로 다른 이용 목적을 표현한 시각 이미지" class="challenge-image" decoding="async"
+                                loading="lazy" src="./images/challenge-03.png" /></div>
                     </div>
                 </article>
             </div>
-            <p class="bottom-copy reveal">신청 방식의 차이, 납부 정보의 관계, 운영 업무의 복잡성을 사용자 관점에서 다시 정의하는 것이 핵심 과제였습니다.</p>
+            <p class="bottom-copy reveal">분산된 업무와 복잡한 교육바우처 관리, 서로 다른 사용자 요구를 하나의 서비스 경험으로 연결하는 것이 핵심 과제였습니다.</p>
         </section>
-        <section class="marquee" aria-label="연결된 교육 경험">
+        <section aria-label="연결된 교육 경험" class="marquee">
             <div class="marquee-line"><span>Connected Education Experience</span><span>Connected Education
                     Experience</span></div>
             <div class="marquee-line"><span>One Platform, Better Learning</span><span>One Platform, Better
                     Learning</span></div>
         </section>
-        <section class="strength project-goal" id="project-goal" aria-labelledby="goal-heading">
+        <!-- =========================================================
+             PROJECT GOAL | 정적 이미지 카드 3개
+             기존 Hover/전환 인터랙션 대신 이미지로 교체
+             ========================================================= -->
+        <section class="project-goal" id="project-goal" aria-labelledby="project-goal-heading">
             <div class="section-label reveal">Project Goal</div>
-            <h2 class="goal-heading reveal" id="goal-heading">하나로 이어지는 <span class="goal-keywords"><span
-                        class="goal-keyword" data-goal-label="0">신청</span><span class="goal-keyword"
-                        data-goal-label="1">결제</span><span class="goal-keyword" data-goal-label="2">운영</span></span> 경험
-            </h2>
-            <div class="goal-grid">
-                <article class="goal-card" data-goal-card="0" tabindex="0" aria-label="신청: 수강신청 통합">
-                    <div class="goal-visual goal-visual--apply" aria-hidden="true">
-                        <div class="goal-visual__halo"></div>
-                        <div class="goal-ui goal-ui--apply">
-                            <div class="goal-ui__front">
-                                <div class="goal-ui__eyebrow">수강신청</div>
-                                <div class="goal-ui__title">어떤 프로그램을 신청할까요?</div>
-                                <div class="goal-ui__row"><span class="goal-ui__dot"></span><span>창의 미술 교실</span><span
-                                        class="goal-ui__tag">선착순</span></div>
-                                <div class="goal-ui__row"><span class="goal-ui__dot"></span><span>즐거운 코딩</span><span
-                                        class="goal-ui__tag">추첨</span></div>
-                                <div class="goal-ui__button">신청하기 <span>→</span></div>
-                                <div class="goal-ui__success">✓ 신청이 완료되었어요</div>
-                            </div>
-                            <div class="goal-ui__complete" aria-hidden="true">
-                                <div class="goal-complete__symbol">✓</div>
-                                <div class="goal-complete__heading">수강신청이<br>완료되었어요!</div>
-                                <p class="goal-complete__desc">창의 미술 교실 신청이<br>정상적으로 접수되었어요.</p>
-                                <div class="goal-complete__summary"><span>프로그램</span><strong>창의 미술 교실</strong></div>
-                                <div class="goal-complete__summary"><span>신청 상태</span><strong
-                                        class="goal-complete__blue">신청 완료</strong></div>
-                                <div class="goal-complete__action">신청 내역 확인 <span>→</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="goal-card__copy">
-                        <h3>신청 과정을 더 간편하게</h3>
-                        <p>선착순·추첨·대기신청을 하나의 흐름으로 연결해요.</p>
-                    </div>
+            <div class="project-goal__head reveal">
+                <h2 id="project-goal-heading">복잡한 업무를 단순하게,<br />더 나은 교육 경험으로.</h2>
+                <p>분산된 교육 운영 환경을 개선하고, 학교 실무자와 학부모 모두가 쉽고 편리하게 이용할 수 있는 서비스를 목표로 했습니다.</p>
+            </div>
+            <div class="project-goal__grid">
+                <!-- 01 | 통합 관리 -->
+                <article class="project-goal__card reveal">
+                    <div class="project-goal__image"><img src="./images/goal-01.png" alt="학생·프로그램·교육바우처 통합 관리 이미지" loading="lazy" decoding="async" /></div>
+                    <span class="project-goal__number">01 / EFFICIENCY</span>
+                    <h3>반복 업무를 줄이고<br />운영 효율성을 높이다</h3>
+                    <p>수작업과 중복 관리를 최소화한 효율적인 운영 환경</p>
                 </article>
-                <article class="goal-card" data-goal-card="1" tabindex="0" aria-label="결제: 결제 및 이용권 연계">
-                    <div class="goal-visual goal-visual--pay" aria-hidden="true">
-                        <div class="goal-visual__halo"></div>
-                        <div class="goal-ui goal-ui--pay">
-                            <div class="goal-ui__front">
-                                <div class="goal-ui__eyebrow">납부 예정</div>
-                                <div class="goal-ui__title">방과후 프로그램</div>
-                                <div class="goal-ui__amount">50,000<span>원</span></div>
-                                <div class="goal-ui__voucher"><span>이용권 적용</span><strong>−30,000원</strong></div>
-                                <div class="goal-ui__total"><span>최종 납부금액</span><strong>20,000원</strong></div>
-                                <div class="goal-ui__button">결제하기 <span>→</span></div>
-                                <div class="goal-ui__success">✓ 결제가 완료되었어요</div>
-                            </div>
-                            <div class="goal-ui__complete" aria-hidden="true">
-                                <div class="goal-complete__symbol">✓</div>
-                                <div class="goal-complete__heading">납부가<br>완료되었어요!</div>
-                                <p class="goal-complete__desc">방과후 프로그램 납부가<br>정상적으로 처리되었어요.</p>
-                                <div class="goal-complete__summary"><span>납부 금액</span><strong>20,000원</strong></div>
-                                <div class="goal-complete__summary"><span>납부 상태</span><strong
-                                        class="goal-complete__blue">납부 완료</strong></div>
-                                <div class="goal-complete__action">납부 내역 확인 <span>→</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="goal-card__copy">
-                        <h3>결제 경험을 더 명확하게</h3>
-                        <p>프로그램 납부와 이용권 적용을 한눈에 확인해요.</p>
-                    </div>
+                <!-- 02 | 바우처 관리 -->
+                <article class="project-goal__card reveal">
+                    <div class="project-goal__image"><img src="./images/goal-02.png" alt="교육바우처 지급과 사용 관리 이미지" loading="lazy" decoding="async" /></div>
+                    <span class="project-goal__number">02 / ACCESSIBILITY</span>
+                    <h3>교육바우처를<br />더 쉽고 편리하게</h3>
+                    <p>지급부터 사용과 잔액 확인까지 이해하기 쉬운 관리 경험</p>
                 </article>
-                <article class="goal-card" data-goal-card="2" tabindex="0" aria-label="운영: 운영 관리 효율화">
-                    <div class="goal-visual goal-visual--manage" aria-hidden="true">
-                        <div class="goal-visual__halo"></div>
-                        <div class="goal-ui goal-ui--manage">
-                            <div class="goal-ui__eyebrow">운영 대시보드</div>
-                            <div class="goal-ui__title">신청부터 납부까지 한눈에</div>
-                            <div class="goal-ui__metrics">
-                                <div><small>신청</small><strong>128</strong></div>
-                                <div><small>확정</small><strong>96</strong></div>
-                                <div><small>납부</small><strong>84</strong></div>
-                            </div>
-                            <div class="goal-ui__chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                            <div class="goal-ui__footer"><span>프로그램 운영 현황</span><strong>정상 운영 중</strong></div>
-                        </div>
-                    </div>
-                    <div class="goal-card__copy">
-                        <h3>운영 현황을 한눈에 확인하도록</h3>
-                        <p>신청·확정·납부 현황을 하나의 대시보드에서 확인해요.</p>
-                    </div>
+                <!-- 03 | 사용자 중심 -->
+                <article class="project-goal__card reveal">
+                    <div class="project-goal__image"><img src="./images/goal-03.png" alt="학교 실무자와 학부모 사용자별 서비스 이미지" loading="lazy" decoding="async" /></div>
+                    <span class="project-goal__number">03 / USER-CENTERED UX</span>
+                    <h3>누구나 쉽게 이해하고<br />이용할 수 있도록</h3>
+                    <p>사용자별 목적과 이용 환경을 고려한 직관적인 경험</p>
                 </article>
             </div>
-            <p class="bottom-copy reveal">학부모에게는 이해하기 쉬운 신청 경험을, 운영자에게는 복잡한 업무를 정리해 주는 관리 환경을 제공하도록 설계했습니다.</p>
         </section>
-        <section class="content">
-            <div class="content-head reveal">
-                <div>
-                    <div class="section-label">User Experience</div>
-                    <h2>Designed for<br>Every User.</h2>
-                </div>
-                <p>학부모와 학교 운영 담당자가 각자의 목적에 맞는 화면에서 필요한 정보를 확인하고, 복잡한 절차를 단계별로 쉽게 처리할 수 있도록 구성했습니다.</p>
+        <!-- =========================================================
+             DESIGN SOLUTION | 2 × 2 editorial cards
+             이미지 경로: ./images/solution-01.png ~ solution-04.png
+             ========================================================= -->
+        <section class="design-solution" id="design-solution" aria-labelledby="solution-heading">
+            <div class="section-label reveal">Design Solution</div>
+            <div class="design-solution__head reveal">
+                <h2 id="solution-heading">복잡했던 과정을,<br>더 쉽고 명확하게.</h2>
+                <p>신청 방식과 결제 정보, 운영 업무의 특성을 고려해 정보 구조와 화면 흐름을 재설계했습니다.</p>
             </div>
-            <div class="content-layout">
-                <div class="media-wrap reveal" data-label="APPLICATION FLOW"><img class="media-placeholder" alt=""
-                        data-image="application"></div>
-                <div class="media-wrap reveal" data-label="PAYMENT FLOW"><img class="media-placeholder" alt=""
-                        data-image="payment"></div>
-                <div class="media-wrap reveal" data-label="DASHBOARD & DETAILS"><img class="media-placeholder" alt=""
-                        data-image="dashboard"></div>
+            <div class="solution-grid">
+                <!-- 01 | 신청 경험 -->
+                <article class="solution-card reveal">
+                    <div class="solution-card__media"><img src="./images/solution-01.png" alt="수강신청 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__copy">
+                        <span class="solution-card__category">수강신청</span>
+                        <h3>서로 다른 신청 방식을,<br>일관된 흐름으로</h3>
+                        <div class="solution-card__tags"><span>선착순</span><span>추첨</span><span>대기신청</span></div>
+                    </div>
+                </article>
+                <!-- 02 | 결제 경험 -->
+                <article class="solution-card reveal">
+                    <div class="solution-card__media"><img src="./images/solution-02.png" alt="교육바우처 적용 및 납부 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__copy">
+                        <span class="solution-card__category">결제 · 교육바우처</span>
+                        <h3>복잡한 납부 내역을,<br>한눈에 이해하도록</h3>
+                        <div class="solution-card__tags"><span>이용권 적용</span><span>납부금액</span><span>결제 상태</span></div>
+                    </div>
+                </article>
+                <!-- 03 | 통합 운영 -->
+                <article class="solution-card reveal">
+                    <div class="solution-card__media"><img src="./images/solution-03.png" alt="학생과 프로그램을 통합 관리하는 운영 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__copy">
+                        <span class="solution-card__category">통합 운영</span>
+                        <h3>여러 관리 업무를,<br>하나의 화면에서</h3>
+                        <div class="solution-card__tags"><span>학생 관리</span><span>프로그램</span><span>운영 현황</span></div>
+                    </div>
+                </article>
+                <!-- 04 | 사용자 맞춤 -->
+                <article class="solution-card reveal">
+                    <div class="solution-card__media"><img src="./images/solution-04.png" alt="학교 실무자와 학부모별 사용자 경험 화면 디자인" loading="lazy" decoding="async"></div>
+                    <div class="solution-card__copy">
+                        <span class="solution-card__category">사용자 중심 UX</span>
+                        <h3>사용자에 맞춰,<br>화면과 기능을 다르게</h3>
+                        <div class="solution-card__tags"><span>학교 실무자</span><span>학부모</span><span>맞춤형 화면</span></div>
+                    </div>
+                </article>
             </div>
         </section>
         <section class="results">
             <div class="section-label reveal">Project Outcome</div>
-            <h2 class="reveal">Simpler Process.<br>Better Experience.</h2>
-            <p class="reveal">방과후 교육 운영의 주요 절차를 하나의 플랫폼으로 연결하고, 학부모와 담당자 각각의 사용 흐름을 체계적으로 정리했습니다.</p>
+            <h2 class="reveal">Simpler Process.<br />Better Experience.</h2>
+            <p class="reveal">분산된 방과후 교육 운영 과정을 하나의 플랫폼으로 통합하고, 학교 실무자의 업무 효율성과 학부모의 이용 편의성을 높이는 서비스 경험을 설계했습니다.</p>
             <div class="result-grid">
                 <article class="reveal"><strong>01</strong>
-                    <p>수강신청부터 확정까지 일관된 신청 경험</p>
+                    <p>일관된 신청 경험</p>
                 </article>
                 <article class="reveal"><strong>02</strong>
-                    <p>프로그램 납부와 이용권 연계 흐름 통합</p>
+                    <p>명확한 결제 경험</p>
                 </article>
                 <article class="reveal"><strong>03</strong>
-                    <p>학생·프로그램·기수 중심 운영 관리 체계</p>
+                    <p>효율적인 운영 환경</p>
                 </article>
             </div>
         </section>
@@ -266,11 +210,10 @@
             <a href="./index.html">ALL WORKS ↗</a>
             <a href="#top">↑ BACK TO TOP</a>
         </footer>
-    </main><a class="floating" href="./index.html">목록보기</a><button class="top" aria-label="맨 위로"
+    </main><a class="floating" href="./index.html">목록보기</a><button aria-label="맨 위로" class="top"
         id="backToTop">↑</button>
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js" defer></script>
-    <script src="./js/detail.js" defer></script>
-
+    <script defer="" src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
+    <script defer="" src="./js/detail.js"></script>
 </body>
 
 </html>

@@ -89,51 +89,7 @@
 })();
 
 
-// Project Challenge: desktop scroll-driven sticky sequence, mobile click-driven.
-(() => {
-  const section = document.querySelector('.challenge--toss');
-  if (!section) return;
-  const items = [...section.querySelectorAll('[data-challenge]')];
-  const scenes = [...section.querySelectorAll('[data-scene]')];
-  const mobile = window.matchMedia('(max-width: 767px)');
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let current = -1;
-  let frame = 0;
-  function activate(index) {
-    if (index === current) return;
-    current = index;
-    items.forEach((item, i) => {
-      const on = i === index;
-      item.classList.toggle('is-active', on);
-      item.setAttribute('aria-selected', String(on));
-    });
-    scenes.forEach((scene, i) => scene.classList.toggle('is-active', i === index));
-  }
-  function sync() {
-    frame = 0;
-    if (mobile.matches) return;
-    const rect = section.getBoundingClientRect();
-    const travel = Math.max(1, section.offsetHeight - window.innerHeight);
-    const progress = Math.min(.999, Math.max(0, -rect.top / travel));
-    activate(Math.min(2, Math.floor(progress * 3)));
-  }
-  function requestSync() {
-    if (frame) return;
-    frame = requestAnimationFrame(sync);
-  }
-  items.forEach((item, index) => item.addEventListener('click', () => {
-    activate(index);
-    if (mobile.matches) return;
-    const top = section.getBoundingClientRect().top + window.scrollY;
-    const travel = Math.max(1, section.offsetHeight - window.innerHeight);
-    const target = top + travel * ((index + .5) / 3);
-    window.scrollTo({top: target, behavior: reduced.matches ? 'instant' : 'smooth'});
-  }));
-  window.addEventListener('scroll', requestSync, {passive:true});
-  window.addEventListener('resize', () => { if (mobile.matches) activate(0); else sync(); });
-  activate(0);
-  sync();
-})();
+// Project Challenge now uses static image assets; no dedicated JS required.
 
 // Project Goal: hover/focus activates the corresponding card and heading keyword.
 document.addEventListener('DOMContentLoaded', () => {
@@ -161,5 +117,3 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => observer.observe(card));
   }
 });
-
-
