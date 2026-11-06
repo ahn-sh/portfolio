@@ -318,10 +318,22 @@ p {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(../images/project-01.png) center / cover no-repeat;
+      background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: .55;
     transform: translate3d(0, var(--hero-shift, 0px), 0) scale(1.06);
     will-change: transform;
+}
+
+/* 방과후드림 */
+.project01 .hero::before {
+  background-image: url("../images/index/project-01.png");
+}
+
+/* 한국핀테크산업협회 */
+.project02 .hero::before {
+  background-image: url("../images/index/project-02.png");
 }
 
 .scroll-cue {
