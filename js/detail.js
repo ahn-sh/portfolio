@@ -1,119 +1,117 @@
-// Detail page: native scrolling + subtle visual responses
+/* ============================================================
+   PORTFOLIO DETAIL / INTERACTIONS
+   01. Missing images
+   02. Lenis smooth scroll
+   03. IntersectionObserver scroll reveal
+   04. Anchor navigation
+   ============================================================ */
 (() => {
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const revealItems = document.querySelectorAll('.reveal');
+  'use strict';
 
-  if (reducedMotion.matches || !('IntersectionObserver' in window)) {
-    revealItems.forEach((item) => item.classList.add('visible'));
-  } else {
+  // 01. 이미지가 없으면 파일명 표시. 기존 이미지 레이아웃은 유지.
+  document.querySelectorAll('.image-slot img').forEach((img) => {
+    const slot = img.closest('.image-slot');
+    if (!slot) return;
+    slot.dataset.placeholder = img.getAttribute('src')?.split('/').pop() || 'IMAGE';
+    const missing = () => slot.classList.add('is-missing');
+    img.addEventListener('error', missing);
+    if (img.complete && img.naturalWidth === 0) missing();
+  });
+
+  const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let lenis = null;
+
+  // 02. Lenis 로딩 실패 시 기본 스크롤 유지.
+  const startSmoothScroll = () => {
+    if (motionQuery.matches || lenis || typeof window.Lenis !== 'function') return;
+    lenis = new window.Lenis({
+      duration: 1.25,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      wheelMultiplier: 0.9,
+      touchMultiplier: 1,
+      autoRaf: true
+    });
+  };
+  startSmoothScroll();
+
+  // 03. 화면 진입 시 콘텐츠가 아래에서 위로 부드럽게 등장.
+  // 이미지 영역은 이미지 파일이 없더라도 빈 박스 자체가 등장.
+  const revealTargets = [
+    '.hero__image',
+    '.project-info__header',
+    '.project-info__row',
+    '.overview-visual__image',
+    '.brand-intro__image',
+    '.section-heading__title',
+    '.section-heading__description',
+    '.concept__grid .image-slot',
+    '.concept__wide',
+    '.service__desktop',
+    '.service__mobile',
+    '.service__detail',
+    '.contents__wide',
+    '.contents__grid .image-slot',
+    '.contents__bottom',
+    '.impact__grid .image-slot'
+  ];
+  const items = [...document.querySelectorAll(revealTargets.join(','))];
+
+  if (!motionQuery.matches && 'IntersectionObserver' in window && items.length) {
+    // Observer 설정 후 클래스를 추가해 첫 프레임의 깜빡임 방지.
+    items.forEach((item) => {
+      item.classList.add('reveal-item');
+      const parent = item.parentElement;
+      if (parent?.classList.contains('concept__grid') ||
+          parent?.classList.contains('contents__grid') ||
+          parent?.classList.contains('impact__grid')) {
+        const index = [...parent.children].indexOf(item);
+        item.style.setProperty('--reveal-delay', `${Math.min(index % 2, 1) * 110}ms`);
+      }
+    });
+    document.documentElement.classList.add('has-reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
+        entry.target.classList.add('is-visible');
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
-    revealItems.forEach((item) => observer.observe(item));
+    }, { root: null, rootMargin: '0px 0px -7% 0px', threshold: 0.08 });
+    items.forEach((item) => observer.observe(item));
+    // 이미 화면 안에 들어와 있는 요소도 첫 페인트 이후 즉시 노출.
+    requestAnimationFrame(() => {
+      items.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) {
+          item.classList.add('is-visible');
+          observer.unobserve(item);
+        }
+      });
+    });
+
+    motionQuery.addEventListener('change', (event) => {
+      if (!event.matches) return;
+      observer.disconnect();
+      document.documentElement.classList.remove('has-reveal');
+      if (lenis) { lenis.destroy(); lenis = null; }
+    });
+  } else {
+    motionQuery.addEventListener('change', (event) => {
+      if (event.matches && lenis) { lenis.destroy(); lenis = null; }
+      else if (!event.matches) startSmoothScroll();
+    });
   }
 
-  // Lenis enhances mouse-wheel scrolling while retaining native touch scrolling.
-  // If the CDN is unavailable, browser-native scrolling remains functional.
-  let lenis = null;
-  if (!reducedMotion.matches && typeof window.Lenis === 'function') {
-    lenis = new window.Lenis({
-      duration: 1.15,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-      syncTouch: false,
-      wheelMultiplier: 0.9
-    });
-    const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf); };
-    requestAnimationFrame(raf);
-    document.querySelector('.scroll-cue')?.addEventListener('click', (event) => {
+  // 04. 내부 링크 이동
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const id = link.getAttribute('href');
+      if (!id || id === '#') return;
+      const target = document.getElementById(id.slice(1));
+      if (!target) return;
       event.preventDefault();
-      lenis.scrollTo('#project-intro', { offset: 0 });
+      if (lenis) lenis.scrollTo(target, { duration: 1.4 });
+      else target.scrollIntoView({ behavior: motionQuery.matches ? 'instant' : 'smooth' });
     });
-
-  }
-
-  const hero = document.querySelector('.hero');
-  const cue = document.querySelector('.scroll-cue');
-  const intro = document.querySelector('#project-intro');
-  const footer = document.querySelector('footer.end');
-  let ticking = false;
-
-  function updateHeroScroll() {
-    ticking = false;
-    if (!hero || !cue) return;
-    // The controls only appear after the hero's bottom edge leaves the viewport.
-    const passedHero = !!intro && intro.getBoundingClientRect().top <= 0;
-    const footerReached = !!footer && footer.getBoundingClientRect().top <= window.innerHeight;
-    document.body.classList.toggle('has-left-hero', passedHero && !footerReached);
-    if (reducedMotion.matches) return;
-    const scrollY = Math.max(0, window.scrollY);
-    const progress = Math.min(scrollY / Math.max(hero.offsetHeight, 1), 1);
-    hero.style.setProperty('--hero-shift', `${Math.round(progress * 42)}px`);
-    cue.style.setProperty('--cue-opacity', String(Math.max(0, 1 - progress * 2.6)));
-    cue.style.setProperty('--cue-shift', `${Math.round(progress * 18)}px`);
-    cue.style.pointerEvents = progress > 0.4 ? 'none' : '';
-  }
-
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(updateHeroScroll);
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll, { passive: true });
-  updateHeroScroll();
-
-  function scrollToTop(event) {
-    event.preventDefault();
-    if (lenis) {
-      lenis.scrollTo(0, { duration: 1.2 });
-    } else {
-      window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
-    }
-  }
-
-  // Floating TOP and footer BACK TO TOP share one handler.
-  document.querySelector('#backToTop')?.addEventListener('click', scrollToTop);
-  // Event delegation works on project01, project02, and later detail pages,
-  // even when the footer markup uses different classes.
-  document.addEventListener('click', (event) => {
-    const link = event.target.closest('a[href="#top"], a[data-scroll-top]');
-    if (!link || !link.closest('footer')) return;
-    scrollToTop(event);
   });
 })();
-
-
-// Project Challenge now uses static image assets; no dedicated JS required.
-
-// Project Goal: hover/focus activates the corresponding card and heading keyword.
-document.addEventListener('DOMContentLoaded', () => {
-  const section = document.querySelector('.project-goal');
-  if (!section) return;
-  const cards = [...section.querySelectorAll('[data-goal-card]')];
-  const labels = [...section.querySelectorAll('[data-goal-label]')];
-  const activate = (index) => {
-    cards.forEach((card, i) => card.classList.toggle('is-active', i === index));
-    labels.forEach((label, i) => label.classList.toggle('is-active', i === index));
-  };
-  const reset = () => activate(-1);
-  cards.forEach((card, index) => {
-    card.addEventListener('pointerenter', (event) => { if (event.pointerType === 'mouse' || event.pointerType === 'pen') activate(index); });
-    card.addEventListener('pointerleave', reset);
-    card.addEventListener('focusin', () => activate(index));
-    card.addEventListener('focusout', (event) => { if (!card.contains(event.relatedTarget)) reset(); });
-    card.addEventListener('click', () => activate(index));
-  });
-  if (window.matchMedia('(hover: none)').matches && 'IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio);
-      if (visible.length) activate(Number(visible[0].target.dataset.goalCard));
-    }, { threshold:[0.35,0.6,0.85] });
-    cards.forEach(card => observer.observe(card));
-  }
-});

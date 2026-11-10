@@ -1,219 +1,134 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <title>방과후드림</title>
-    <link href="./css/reset.css" rel="stylesheet" />
-    <link href="./css/variables.css" rel="stylesheet" />
-    <link href="./css/common.css" rel="stylesheet" />
-    <link href="./css/detail.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>방과후드림</title>
+  <!-- English: Poppins / Korean: Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/detail.css">
 </head>
 
-<body class="project01">
-    <!-- <header><strong>방과후드림</strong><a href="./index.html">ALL WORKS ↗</a></header> -->
-    <main>
-        <section aria-label="프로젝트 메인 배너" class="hero" id="top">
-            <a aria-label="프로젝트 소개로 이동" class="scroll-cue" href="#project-intro">
-                <span class="scroll-cue__text">SCROLL DOWN</span>
-                <svg aria-hidden="true" class="scroll-cue__arrow" fill="none" height="32" viewbox="0 0 24 32"
-                    width="24">
-                    <path d="M12 2V28M3 19L12 28L21 19" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="1.7"></path>
-                </svg>
-            </a>
-        </section>
-        <section class="intro" id="project-intro">
-            <div class="intro-content reveal">
-                <h2>방과후드림 통합 관리 플랫폼 구축</h2>
-                <div class="meta"><b>KEYWORD</b><span>#방과후 교육 #교육바우처 #업무 디지털화 #통합 관리 #업무 효율화 #프로그램 관리 #학생 관리 #수강신청 #이용권
-                        관리 #사용자 중심 설계 #UI/UX #반응형 웹
-                        웹</span><b>CLIENT</b><span>교육부</span><b>ROLE</b><span>서비스 기획 · UI/UX 설계</span></div>
-                <p class="intro-desc">방과후드림은 엑셀과 수기 방식으로 이루어지던 방과후 교육 운영 및 교육바우처 관리 업무를 디지털화하여, 학교 실무자의 업무 효율성을 높이기 위해
-                    구축한 통합 관리 플랫폼입니다.
+<body>
+  <header class="site-header"><a href="./index.html" aria-label="목록으로 돌아가기">← Back</a><span>AHNSOHYUN</span></header>
+  <main>
+    <!-- 01. MAIN VISUAL: 대표 이미지 -->
+    <section class="hero page-width" id="top" aria-label="프로젝트 대표 이미지">
+      <div class="image-slot hero__image"><img src="./images/project-01.png" alt="프로젝트 대표 이미지" loading="eager"></div>
 
-                    학생 및 프로그램 관리부터 교육바우처 지급·사용, 수강신청과 결제까지 이어지는 업무 과정을 하나의 서비스로 통합하고, 실무자의 운영 편의성과 학부모의 이용 경험을 함께 고려한
-                    직관적인 UI/UX를 설계했습니다.
-                </p>
-                <a class="outline-btn" href="#overview">사이트 바로가기
-                    <span>→</span></a>
-            </div>
-        </section>
-        <section class="overview" id="overview">
-            <div class="copy reveal">
-                <div class="section-label">Project Background</div>
-                <h2>수작업으로 이루어지던<br />방과후 교육 운영, 이제는 하나로.</h2>
-                <p>기존 방과후 교육 운영은 학교마다 엑셀과 수기 방식으로 이루어져, 학생과 프로그램 관리부터 교육바우처 사용까지 여러 업무를 개별적으로 처리해야 했습니다.
-                    <br />이러한 운영 환경을 개선하고, 학교 실무자가 보다 쉽고 효율적으로 업무를 관리할 수 있는 통합 시스템이 필요했습니다.
-                </p>
-            </div><span class="image-label">BACKGROUND IMAGE AREA · 100VH</span>
-        </section>
-        <section aria-labelledby="challenge-editorial-heading" class="challenge-editorial" id="project-challenge">
-            <div class="section-label reveal">Project Challenge</div>
-            <h2 class="challenge-editorial__heading reveal" id="challenge-editorial-heading">복잡한 과정을<br />더 단순하게.</h2>
-            <div class="challenge-editorial__list">
-                <article class="goal-story reveal">
-                    <div class="goal-story__intro"><span class="goal-story__number">01</span>
-                        <h3>흩어진 관리 업무,<br />어떻게 하나로 연결할까?</h3>
-                    </div>
-                    <div class="goal-story__body">
-                        <div class="goal-story__text">
-                            <h4>엑셀과 수기로 분산된 업무 환경</h4>
-                            <p>학생·프로그램·교육바우처 관리가 개별적으로 이루어져 반복적인 수작업이 발생했습니다.<br>이를 개선하기 위한 통합 관리 체계가 필요했습니다.
-                            </p>
-                        </div>
-                        <div class="goal-story__visual challenge-image-frame"><img
-                                alt="엑셀·수기·교육바우처로 분산된 업무 환경을 표현한 시각 이미지" class="challenge-image" decoding="async"
-                                loading="lazy" src="./images/challenge-01.png" /></div>
-                    </div>
-                </article>
-                <article class="goal-story reveal">
-                    <div class="goal-story__intro"><span class="goal-story__number">02</span>
-                        <h3>복잡한 교육바우처,<br />어떻게 쉽게 관리할까?</h3>
-                    </div>
-                    <div class="goal-story__body">
-                        <div class="goal-story__text">
-                            <h4>지급부터 사용까지 이어지는 관리 과정</h4>
-                            <p>교육바우처의 지급·회수·사용 내역 등 복잡한 관리 절차를 실무자가 쉽고 정확하게 처리할 수 있도록 개선이 필요했습니다.
-                            </p>
-                        </div>
-                        <div class="goal-story__visual challenge-image-frame"><img
-                                alt="교육바우처 지급·사용·잔액 확인·회수의 관리 과정을 표현한 시각 이미지" class="challenge-image" decoding="async"
-                                loading="lazy" src="./images/challenge-02.png" /></div>
-                    </div>
-                </article>
-                <article class="goal-story reveal">
-                    <div class="goal-story__intro"><span class="goal-story__number">03</span>
-                        <h3>서로 다른 사용자,<br />어떻게 편리하게 연결할까?</h3>
-                    </div>
-                    <div class="goal-story__body">
-                        <div class="goal-story__text">
-                            <h4>사용자에 따라 달라지는 이용 목적</h4>
-                            <p>실무자의 효율적인 업무 관리와 학부모의 간편한 신청·결제를 위해 사용자별 목적에 맞는 서비스 설계가 필요했습니다.</p>
-                        </div>
-                        <div class="goal-story__visual challenge-image-frame"><img
-                                alt="학교 실무자와 학부모의 서로 다른 이용 목적을 표현한 시각 이미지" class="challenge-image" decoding="async"
-                                loading="lazy" src="./images/challenge-03.png" /></div>
-                    </div>
-                </article>
-            </div>
-            <p class="bottom-copy reveal">분산된 업무와 복잡한 교육바우처 관리, 서로 다른 사용자 요구를 하나의 서비스 경험으로 연결하는 것이 핵심 과제였습니다.</p>
-        </section>
-        <section aria-label="연결된 교육 경험" class="marquee">
-            <div class="marquee-line"><span>Connected Education Experience</span><span>Connected Education
-                    Experience</span></div>
-            <div class="marquee-line"><span>One Platform, Better Learning</span><span>One Platform, Better
-                    Learning</span></div>
-        </section>
-        <!-- =========================================================
-             PROJECT GOAL | 정적 이미지 카드 3개
-             기존 Hover/전환 인터랙션 대신 이미지로 교체
-             ========================================================= -->
-        <section class="project-goal" id="project-goal" aria-labelledby="project-goal-heading">
-            <div class="section-label reveal">Project Goal</div>
-            <div class="project-goal__head reveal">
-                <h2 id="project-goal-heading">복잡한 업무를 단순하게,<br />더 나은 교육 경험으로.</h2>
-                <p>분산된 교육 운영 환경을 개선하고, 학교 실무자와 학부모 모두가 쉽고 편리하게 이용할 수 있는 서비스를 목표로 했습니다.</p>
-            </div>
-            <div class="project-goal__grid">
-                <!-- 01 | 통합 관리 -->
-                <article class="project-goal__card reveal">
-                    <div class="project-goal__image"><img src="./images/goal-01.png" alt="학생·프로그램·교육바우처 통합 관리 이미지" loading="lazy" decoding="async" /></div>
-                    <span class="project-goal__number">01 / EFFICIENCY</span>
-                    <h3>반복 업무를 줄이고<br />운영 효율성을 높이다</h3>
-                    <p>수작업과 중복 관리를 최소화한 효율적인 운영 환경</p>
-                </article>
-                <!-- 02 | 바우처 관리 -->
-                <article class="project-goal__card reveal">
-                    <div class="project-goal__image"><img src="./images/goal-02.png" alt="교육바우처 지급과 사용 관리 이미지" loading="lazy" decoding="async" /></div>
-                    <span class="project-goal__number">02 / ACCESSIBILITY</span>
-                    <h3>교육바우처를<br />더 쉽고 편리하게</h3>
-                    <p>지급부터 사용과 잔액 확인까지 이해하기 쉬운 관리 경험</p>
-                </article>
-                <!-- 03 | 사용자 중심 -->
-                <article class="project-goal__card reveal">
-                    <div class="project-goal__image"><img src="./images/goal-03.png" alt="학교 실무자와 학부모 사용자별 서비스 이미지" loading="lazy" decoding="async" /></div>
-                    <span class="project-goal__number">03 / USER-CENTERED UX</span>
-                    <h3>누구나 쉽게 이해하고<br />이용할 수 있도록</h3>
-                    <p>사용자별 목적과 이용 환경을 고려한 직관적인 경험</p>
-                </article>
-            </div>
-        </section>
-        <!-- =========================================================
-             DESIGN SOLUTION | 2 × 2 editorial cards
-             이미지 경로: ./images/solution-01.png ~ solution-04.png
-             ========================================================= -->
-        <section class="design-solution" id="design-solution" aria-labelledby="solution-heading">
-            <div class="section-label reveal">Design Solution</div>
-            <div class="design-solution__head reveal">
-                <h2 id="solution-heading">복잡했던 과정을,<br>더 쉽고 명확하게.</h2>
-                <p>신청 방식과 결제 정보, 운영 업무의 특성을 고려해 정보 구조와 화면 흐름을 재설계했습니다.</p>
-            </div>
-            <div class="solution-grid">
-                <!-- 01 | 신청 경험 -->
-                <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-01.png" alt="수강신청 화면 디자인" loading="lazy" decoding="async"></div>
-                    <div class="solution-card__copy">
-                        <span class="solution-card__category">수강신청</span>
-                        <h3>서로 다른 신청 방식을,<br>일관된 흐름으로</h3>
-                        <div class="solution-card__tags"><span>선착순</span><span>추첨</span><span>대기신청</span></div>
-                    </div>
-                </article>
-                <!-- 02 | 결제 경험 -->
-                <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-02.png" alt="교육바우처 적용 및 납부 화면 디자인" loading="lazy" decoding="async"></div>
-                    <div class="solution-card__copy">
-                        <span class="solution-card__category">결제 · 교육바우처</span>
-                        <h3>복잡한 납부 내역을,<br>한눈에 이해하도록</h3>
-                        <div class="solution-card__tags"><span>이용권 적용</span><span>납부금액</span><span>결제 상태</span></div>
-                    </div>
-                </article>
-                <!-- 03 | 통합 운영 -->
-                <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-03.png" alt="학생과 프로그램을 통합 관리하는 운영 화면 디자인" loading="lazy" decoding="async"></div>
-                    <div class="solution-card__copy">
-                        <span class="solution-card__category">통합 운영</span>
-                        <h3>여러 관리 업무를,<br>하나의 화면에서</h3>
-                        <div class="solution-card__tags"><span>학생 관리</span><span>프로그램</span><span>운영 현황</span></div>
-                    </div>
-                </article>
-                <!-- 04 | 사용자 맞춤 -->
-                <article class="solution-card reveal">
-                    <div class="solution-card__media"><img src="./images/solution-04.png" alt="학교 실무자와 학부모별 사용자 경험 화면 디자인" loading="lazy" decoding="async"></div>
-                    <div class="solution-card__copy">
-                        <span class="solution-card__category">사용자 중심 UX</span>
-                        <h3>사용자에 맞춰,<br>화면과 기능을 다르게</h3>
-                        <div class="solution-card__tags"><span>학교 실무자</span><span>학부모</span><span>맞춤형 화면</span></div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section class="results">
-            <div class="section-label reveal">Project Outcome</div>
-            <h2 class="reveal">Simpler Process.<br />Better Experience.</h2>
-            <p class="reveal">분산된 방과후 교육 운영 과정을 하나의 플랫폼으로 통합하고, 학교 실무자의 업무 효율성과 학부모의 이용 편의성을 높이는 서비스 경험을 설계했습니다.</p>
-            <div class="result-grid">
-                <article class="reveal"><strong>01</strong>
-                    <p>일관된 신청 경험</p>
-                </article>
-                <article class="reveal"><strong>02</strong>
-                    <p>명확한 결제 경험</p>
-                </article>
-                <article class="reveal"><strong>03</strong>
-                    <p>효율적인 운영 환경</p>
-                </article>
-            </div>
-        </section>
-        <footer class="end" id="end">
-            <a href="./index.html">ALL WORKS ↗</a>
-            <a href="#top">↑ BACK TO TOP</a>
-        </footer>
-    </main><a class="floating" href="./index.html">목록보기</a><button aria-label="맨 위로" class="top"
-        id="backToTop">↑</button>
-    <script defer="" src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
-    <script defer="" src="./js/detail.js"></script>
+    </section>
+
+    <!-- 02. PROJECT INFORMATION / 레퍼런스의 큰 제목 + 우측 Client·Date -->
+    <section class="project-info page-width" aria-labelledby="project-title">
+      <div class="project-info__header">
+        <h1 id="project-title">방과후드림</h1>
+        <div class="project-info__meta">
+          <div><strong>Client</strong><span>교육부</span></div>
+          <div><strong>Date</strong><span>2025. 11 – 2025. 03</span></div>
+        </div>
+      </div>
+      <div class="project-info__details">
+        <div class="project-info__row">
+          <h2>Over View</h2>
+          <p>기존 엑셀과 수기 중심의 방과후 교육 운영 업무를 통합하고, 학교 실무자와 학부모의 이용 목적에 맞춰 설계한 교육 플랫폼입니다.
+
+              관리자는 학생·프로그램·바우처·수납 업무를 효율적으로 처리하고, 학부모는 수강신청부터 결제까지 편리하게 이용할 수 있도록 사용자별 서비스 흐름을 구성했습니다.</p>
+        </div>
+        <div class="project-info__row">
+          <h2>Keyword</h2>
+          <div class="keywords"><span># 통합교육플랫폼</span><span># 운영관리</span><span># 교육바우처</span><span># 수강신청</span><span>#
+              사용자중심UX</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. OVERVIEW MOCKUP: PC + 모바일 이미지 -->
+    <section class="overview-visual page-width" aria-label="서비스 대표 목업">
+      <div class="image-slot overview-visual__image"><img src="./images/01/02-overview-mockup.png" alt="PC 및 모바일 서비스 목업"
+          loading="lazy"></div>
+    </section>
+
+    <!-- 04. BRAND INTRO: 가로형 소개 이미지 -->
+    <section class="brand-intro page-width" aria-label="브랜드 소개">
+      <div class="image-slot brand-intro__image">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./images/01/03-brand-intro(2).png">
+          <img src="./images/01/03-brand-intro.png" alt="브랜드 소개" loading="lazy">
+        </picture>
+      </div>
+    </section>
+
+    <!-- 05. DESIGN CONCEPT: 타이틀 + 2x2 이미지 + 와이드 이미지 -->
+    <section class="editorial-section concept page-width" aria-labelledby="concept-title">
+      <div class="section-heading">
+        <h2 class="section-heading__title" id="concept-title">Design Concept</h2>
+        <p class="section-heading__description">서비스의 방향성을 시각적인 언어로 정리하고, 일관된 디자인 경험을 설계했습니다.</p>
+      </div>
+      <div class="concept__grid">
+        <div class="image-slot"><img src="./images/01/04-concept-typography.png" alt="타이포그래피 디자인" loading="lazy"></div>
+        <div class="image-slot"><img src="./images/01/05-concept-color.png" alt="컬러 시스템" loading="lazy"></div>
+        <div class="image-slot"><img src="./images/01/06-concept-icons.png" alt="아이콘 디자인" loading="lazy"></div>
+        <div class="image-slot"><img src="./images/01/07-concept-character.png" alt="캐릭터 및 그래픽 디자인" loading="lazy">
+        </div>
+      </div>
+      <div class="image-slot concept__wide"><img src="./images/01/08-concept-wide.png" alt="디자인 컨셉 그래픽" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 06. SERVICE DESIGN: PC + 모바일 UI + 상세 비주얼 -->
+    <section class="editorial-section service page-width" aria-labelledby="service-title">
+      <div class="section-heading">
+        <h2 class="section-heading__title" id="service-title">Service Design</h2>
+        <p class="section-heading__description">사용자의 이용 흐름을 고려해 주요 화면과 인터페이스를 구성했습니다.</p>
+      </div>
+      <div class="image-slot service__desktop"><img src="./images/01/09-service-desktop.png" alt="PC 서비스 디자인"
+          loading="lazy"></div>
+      <div class="image-slot service__mobile"><img src="./images/01/10-service-mobile.png" alt="모바일 서비스 화면 모음"
+          loading="lazy"></div>
+      <div class="image-slot service__detail"><img src="./images/01/11-service-detail.png" alt="서비스 디자인 상세 이미지"
+          loading="lazy"></div>
+    </section>
+
+    <!-- 07. CONTENTS DESIGN: 1열 와이드 + 2열 + 와이드 이미지 -->
+    <section class="editorial-section contents page-width" aria-labelledby="contents-title">
+      <div class="section-heading">
+        <h2 class="section-heading__title" id="contents-title">Contents Design</h2>
+        <p class="section-heading__description">정보를 이해하기 쉽고 매력적으로 전달하는 콘텐츠 경험을 디자인했습니다.</p>
+      </div>
+      <div class="image-slot contents__wide"><img src="./images/01/12-contents-main.png" alt="콘텐츠 디자인 메인 이미지"
+          loading="lazy"></div>
+      <div class="contents__grid">
+        <div class="image-slot"><img src="./images/01/13-contents-left.png" alt="콘텐츠 디자인 이미지 1" loading="lazy"></div>
+        <div class="image-slot"><img src="./images/01/14-contents-right.png" alt="콘텐츠 디자인 이미지 2" loading="lazy"></div>
+      </div>
+      <div class="image-slot contents__bottom"><img src="./images/01/15-contents-detail.png" alt="콘텐츠 디자인 상세 이미지"
+          loading="lazy"></div>
+    </section>
+
+    <!-- 08. QUALITATIVE IMPACT: 2x2 이미지 -->
+    <section class="editorial-section impact page-width" aria-labelledby="impact-title">
+      <div class="section-heading">
+        <h2 class="section-heading__title" id="impact-title">Qualitative Impact</h2>
+        <p class="section-heading__description">사용자 경험과 서비스 운영 관점에서 얻은 주요 성과를 정리했습니다.</p>
+      </div>
+      <div class="impact__grid">
+        <div class="image-slot"><img src="./images/01/16-impact-01.png" alt="성과 이미지 1" loading="lazy"></div>
+        <div class="image-slot"><img src="./images/01/17-impact-02.png" alt="성과 이미지 2" loading="lazy"></div>
+        <div class="image-slot"><img src="./images/01/18-impact-03.png" alt="성과 이미지 3" loading="lazy"></div>
+        <div class="image-slot"><img src="./images/01/19-impact-04.png" alt="성과 이미지 4" loading="lazy"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page-width"><span>© 2026 Portfolio</span><a href="./index.html">ALL WORKS ↗</a><a href="#top"
+      id="back-top">BACK TO TOP ↑</a></footer>
+  <!-- Lenis: 관성 스크롤 (CDN 연결 실패 시 기본 스크롤 유지) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"></script>
+  <script defer src="./js/detail.js"></script>
 </body>
 
 </html>
