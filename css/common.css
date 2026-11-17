@@ -1,6 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");html {
+/* ========================================
+   Font
+======================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+
+
+/* ========================================
+   Base
+======================================== */
+
+html {
     scroll-behavior: smooth;
-}body {
+}
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
     min-width: 320px;
     font-family: "Poppins", "Pretendard Variable", sans-serif;
     font-size: var(--fluid-body-b16);
@@ -15,79 +31,148 @@
     transition: opacity 0.2s ease;
     word-break: keep-all;
     overflow-wrap: break-word;
-}body.is-page-leaving {
+}
+
+body.is-page-leaving {
     opacity: 0;
-}main {
+}
+
+main {
     transform: translateY(0);
-    transition: opacity 0.2s ease,
-        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}body.is-page-leaving main {
+    transition: opacity 0.2s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.is-page-leaving main {
     opacity: 0;
     transform: translateY(-12px);
-}.font-ko {
+}
+
+
+/* ========================================
+   Font Family
+======================================== */
+
+.font-ko {
     font-family: "Pretendard Variable", sans-serif;
-}.font-en,
-:lang(en) {
+}
+
+.font-en, :lang(en) {
     font-family: "Poppins", sans-serif;
     letter-spacing: -.01em;
-}.container {
+}
+
+
+/* ========================================
+   Container
+======================================== */
+
+.container {
     width: 100%;
     margin: 0 auto;
-    max-width: calc(
-        var(--content-width) +
-        (var(--content-padding-desktop) * 2)
-    );
+    max-width: calc(var(--content-width) + (var(--content-padding-desktop) * 2));
     padding-inline: var(--content-padding-desktop);
-}.heading-display {
+}
+
+
+/* ========================================
+   Typography
+======================================== */
+
+.heading-display {
     font-size: var(--fluid-title-t4);
     font-weight: var(--font-weight-bold);
     line-height: 1.15;
     letter-spacing: -.03em;
-}.heading-1 {
+}
+
+.heading-1 {
     font-size: var(--fluid-header-h1);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.03em;
-}.heading-2 {
+}
+
+.heading-2 {
     font-size: var(--fluid-header-h2);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.03em;
-}.heading-3 {
+}
+
+.heading-3 {
     font-size: var(--fluid-header-h3);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.01em;
-}.heading-4 {
+}
+
+.heading-4 {
     font-size: var(--fluid-header-h4);
     font-weight: var(--font-weight-bold);
     line-height: 1.4;
     letter-spacing: -.01em;
-}.body-lg {
+}
+
+.body-lg {
     font-size: var(--fluid-header-h6);
     line-height: 1.7;
-}.body-md {
+}
+
+.body-md {
     font-size: var(--fluid-body-b18);
     line-height: 1.7;
-}.body-sm {
+}
+
+.body-sm {
     font-size: var(--fluid-body-b16);
     line-height: 1.7;
-}.caption {
+}
+
+.caption {
     font-size: var(--fluid-body-b14);
     line-height: 1.5;
-}.image {
+}
+
+
+/* ========================================
+   Image
+======================================== */
+
+.image {
     display: block;
     width: 100%;
     height: auto;
-}.image-cover {
+}
+
+.image-cover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}.image-contain {
+}
+
+.image-contain {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}.blind {
+}
+
+
+/* ========================================
+   Image Protection
+======================================== */
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* ========================================
+   Accessibility
+======================================== */
+
+.blind {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -97,22 +182,47 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
-}::selection {
+}
+
+
+/* ========================================
+   Selection
+======================================== */
+
+::selection {
     color: var(--static---white);
     background-color: var(--grey--950);
-}.footer {
+}
+
+
+/* ========================================
+   Footer
+======================================== */
+
+.footer {
     border-top: 1px solid var(--grey--300);
-}.footer__inner {
+}
+
+.footer__inner {
     display: flex;
     align-items: center;
     min-height: 100px;
-}.footer__copyright {
+}
+
+.footer__copyright {
     font-family: "Poppins", sans-serif;
     font-size: var(--fluid-body-b14);
     font-weight: var(--font-weight-regular);
     line-height: 1.5;
     color: var(--grey--700);
-}.sub-header {
+}
+
+
+/* ========================================
+   Sub Header
+======================================== */
+
+.sub-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -121,22 +231,43 @@
     height: 72px;
     background: transparent;
     border-bottom: 1px solid transparent;
-    transition: background-color 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-}.sub-header__inner {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sub-header__inner {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-inline: 32px;
-}.sub-header.is-scrolled {
+}
+
+.sub-header.is-scrolled {
     background-color: rgba(255, 255, 255, 0.96);
     border-bottom-color: var(--grey--300);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-}.back-button {
+}
+
+.sub-header__title {
+    font-size: var(--fluid-body-b14);
+    font-weight: var(--font-weight-medium);
+    color: var(--grey--950);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sub-header.is-scrolled .sub-header__title {
+    opacity: 1;
+}
+
+
+/* ========================================
+   Back Button
+======================================== */
+
+.back-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,21 +278,22 @@
     color: var(--grey--950);
     background: transparent;
     cursor: pointer;
-}.back-button__arrow {
+}
+
+.back-button__arrow {
     width: 10px;
     height: 10px;
     border-left: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
     transform: rotate(45deg);
-}.sub-header__title {
-    font-size: var(--fluid-body-b14);
-    font-weight: var(--font-weight-medium);
-    color: var(--grey--950);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}.sub-header.is-scrolled .sub-header__title {
-    opacity: 1;
-}.top-button {
+}
+
+
+/* ========================================
+   Top Button
+======================================== */
+
+.top-button {
     position: fixed;
     right: 32px;
     bottom: 32px;
@@ -179,15 +311,16 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(12px);
-    transition: opacity 0.3s ease,
-        visibility 0.3s ease,
-        transform 0.3s ease,
-        background-color 0.2s ease;
-}.top-button.is-visible {
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+}
+
+.top-button.is-visible {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-}.top-button__arrow {
+}
+
+.top-button__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,6 +330,22 @@
     color: #fff;
     transform: translateY(-1px);
 }
+
+
+/* ========================================
+   Responsive - Tablet (1024px)
+======================================== */
+
+@media (max-width: 1024px) {
+    .container {
+        padding-inline: var(--content-padding-tablet);
+    }
+}
+
+
+/* ========================================
+   Responsive - Mobile (767px)
+======================================== */
 
 @media (max-width: 767px) {
     .sub-header {
@@ -228,8 +377,12 @@
     .container {
         padding-inline: var(--content-padding-mobile);
     }
-
 }
+
+
+/* ========================================
+   Hover Interaction
+======================================== */
 
 @media (hover: hover) {
     .top-button:hover {
@@ -240,13 +393,4 @@
     .top-button.is-visible:hover {
         transform: translateY(-3px);
     }
-
 }
-
-@media (max-width: 1024px) {
-    .container {
-        padding-inline: var(--content-padding-tablet);
-    }
-
-}
-
