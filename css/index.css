@@ -7,7 +7,7 @@
 }
 
 body {
-    background: var(--grey--950);
+    background: var(--static---black);
     color: var(--static---white);
 }
 
@@ -130,7 +130,7 @@ body {
     position: relative;
     display: block;
     min-width: 0;
-    aspect-ratio: 3/4;
+    aspect-ratio: 4/4;
     overflow: hidden;
     border-radius: 0;
     background: var(--grey--900);
