@@ -4,9 +4,10 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs
 
 // Only allow PDFs explicitly registered here (do not accept arbitrary URL parameters).
 const projects = {
-  gongsil: { title: '공실투데이 | 프로젝트 포트폴리오', file: './assets/pdf/gongsil.pdf' },
-  afterschool: { title: '방과후드림 | 프로젝트 포트폴리오', file: './assets/pdf/dream.pdf' },
-  korfin: { title: '한국핀테크산업협회 | 프로젝트 포트폴리오', file: './assets/pdf/korfin.pdf' },
+  gongsil: { title: '공실투데이', file: './assets/pdf/gongsil.pdf' },
+  afterschool: { title: '방과후드림', file: './assets/pdf/dream.pdf' },
+  korfin: { title: '한국핀테크산업협회', file: './assets/pdf/korfin.pdf' },
+  inis: { title: '아이엔아이소프트', file: './assets/pdf/inis.pdf' },
 };
 const $ = (id) => document.getElementById(id);
 const key = new URLSearchParams(location.search).get('project') || 'gongsil';
